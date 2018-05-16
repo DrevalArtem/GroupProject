@@ -1,0 +1,17 @@
+.section-caption{
+    font-size: 60px;
+   text-transform: uppercase; 
+}
+
+.section-caption::first-letter{
+    color: #00bcd4;
+
+}
+
+.blue{
+    color: #00bcd4;
+}
+
+.white{
+    color: #fff;
+}

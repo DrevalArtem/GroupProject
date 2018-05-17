@@ -2,10 +2,41 @@
 @import "fonts";
 @import "libs";
 @import "mixins";
+@import "media";
 
 @import "./components/_header.scss";
+.container-main{
+    width: 320px;
+    margin: 0 auto;
+    color: red;
+}
+.bg-guarantee{
+    background-image: url('../img/background.png');
+    width: 500px;
+    height: 1575px;
+}
 
+.section-caption{
+    font-size: 25px;
+    font-weight: 400;
+}
 
+.section-caption--white{
+    text-align: center;
+    padding: 0 60px;
+    color: #ffffff;
+    &::first-letter{
+        color: #00bcd4;
+    }
+    &::after{
+        content: '';
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+        padding-top: 14px;
+        border-bottom: 2px solid #00bcd4; 
+    }
+}
 
 
 

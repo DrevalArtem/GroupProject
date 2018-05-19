@@ -95,6 +95,7 @@
     fill: $main-color;
     stroke: #ffffff;
     stroke-width: rem(2);
+    padding: 0;
 }
 
 .career-list__text {
@@ -337,6 +338,7 @@
     }
     &:hover {
         box-shadow: 0 rem(4) rem(17) rem(-4) rgba(0, 0, 0, 0.75);
+        transition: all 200ms linear;
     }
 }
 
@@ -420,7 +422,7 @@
     margin-bottom: rem(20);
 }
 
-.our-pride-cup__background--nations{
+.our-pride-cup__background--nations {
     background-image: url('../img/nations-opacity.png');
     background-repeat: no-repeat;
     background-position-y: rem(72);
@@ -428,26 +430,26 @@
     height: rem(260);
 }
 
-.our-pride-cup__background--cup{
+.our-pride-cup__background--cup {
     background-image: url('../img/cup-opacity.png');
     background-repeat: no-repeat;
     width: 100%;
     height: rem(368);
 }
 
-.our-pride-cup__background--cup-two{
+.our-pride-cup__background--cup-two {
     background-image: url('../img/cup-two-opacity.png');
     background-repeat: no-repeat;
     width: 100%;
     height: rem(387);
 }
 
-.wrap-cont-pride{
+.wrap-cont-pride {
     padding-top: rem(21);
     padding-left: rem(17);
 }
 
-.our-pride-cup__deco{
+.our-pride-cup__deco {
     font-family: $semi-font;
     font-size: rem(18);
     font-weight: 700;
@@ -456,7 +458,7 @@
     padding: rem(5) rem(11) rem(9);
 }
 
-.our-pride-cup__caption{
+.our-pride-cup__caption {
     font-family: $list-text;
     font-size: rem(14);
     font-weight: 700;
@@ -466,12 +468,7 @@
     padding-right: rem(82);
 }
 
-.our-pride-cup__caption--tender{
-    padding-top: rem(32);
-    margin-bottom: rem(14);
-}
-
-.our-pride-cup__text{
+.our-pride-cup__text {
     font-family: $list-text;
     font-size: rem(13);
     font-weight: 400;
@@ -480,23 +477,351 @@
     padding: 0 rem(20);
 }
 
-.our-pride-cup__caption--awards{
+.our-pride-cup__caption--tender {
+    padding-top: rem(32);
+    margin-bottom: rem(14);
+}
+
+.our-pride-cup__img--nations {
+    position: absolute;
+    right: rem(15);
+    bottom: rem(15);
+}
+
+.wrap-cont-last__flex {
+    display: flex;
+}
+
+.our-pride-cup__caption--awards {
     padding-right: 0;
     padding-top: rem(26);
-    margin-bottom: rem(110);
+    margin-bottom: rem(111);
 }
 
-.our-pride-cup__caption--education{
+.our-pride-cup__text--cup {
+    padding-left: rem(35);
+    padding-right: rem(110);
+}
+
+.our-pride-cup__img--cup {
+    position: absolute;
+    right: rem(20);
+    bottom: rem(20);
+}
+
+.our-pride-cup__caption--education {
     padding-top: rem(23);
-    margin-bottom: rem(110);
+    margin-bottom: rem(111);
 }
 
-.our-pride-cup__text--cup{
-    padding-right: rem(115);
+.our-pride-cup__text--cup-two {
     padding-left: rem(35);
+    padding-right: rem(110);
 }
 
-.our-pride-cup__text--cup-two{
-    padding-right: rem(128);
-    padding-left: rem(35);
+.our-pride-cup__img--cup-two {
+    position: absolute;
+    right: rem(15);
+    bottom: rem(20);
+}
+
+.wrap-list-our-pride {
+    width: rem(320);
+    margin: 0 auto;
+}
+
+//========================================
+.teacher {
+    position: relative;
+    width: rem(320);
+    margin: 0 auto;
+}
+
+.teacher__background {
+    position: absolute;
+    top: rem(-174);
+    width: 100%;
+    height: rem(2000);
+    background-image: url('../img/background-white.png');
+    padding-top: rem(205);
+    z-index: -1;
+}
+
+.teacher__subtitle {
+    font-family: $font-caption;
+    font-size: rem(14);
+    font-weight: 700;
+    line-height: rem(18);
+    text-align: center;
+    color: $color-caption-white_page;
+    padding: 0 rem(34);
+    margin-bottom: rem(41);
+}
+
+.teacher__text {
+    font-family: $list-text;
+    font-size: rem(14);
+    font-weight: 600;
+    line-height: rem(24);
+    color: $color-caption-white_page;
+    padding: 0 rem(15);
+    margin-bottom: rem(25);
+}
+
+.teacher-list {
+    width: rem(320);
+    margin: 0 auto;
+}
+
+.teacher-position {
+    display: flex;
+    justify-content: flex-end;
+    font-family: $semi-font;
+    font-size: rem(24);
+    font-weight: 700;
+    color: $color-caption-white_page;
+    margin-bottom: rem(20);
+    &::before {
+        content: '';
+        display: inline-block;
+        border-bottom: rem(2) solid #29292b;
+        width: rem(100);
+        margin-right: rem(9);
+    }
+}
+
+.teacher-list__background {
+    display: flex;
+    background-color: #fff;
+    width: rem(292);
+    margin: 0 auto;
+    border-bottom: rem(1) solid #dfdfdf;
+}
+
+.teacher-list__img {
+    width: rem(130);
+    height: rem(130);
+}
+
+.teacher-list__name {
+    font-family: $semi-font;
+    font-size: rem(20);
+    font-weight: 700;
+    line-height: rem(24);
+    padding-top: rem(13);
+    padding-left: rem(19);
+    &::after {
+        content: '';
+        display: block;
+        border-bottom: rem(2) solid $main-color;
+        width: rem(55);
+        padding-top: rem(7);
+        margin-bottom: rem(8);
+    }
+}
+
+.teacher-list__position {
+    display: block;
+    font-family: $semi-font;
+    font-size: rem(14);
+    font-weight: 700;
+    line-height: rem(18);
+    color: $color-caption-white_page;
+    text-align: left;
+    padding-left: rem(19);
+}
+
+.wrap-teacher-list__experience {
+    background-color: #ffffff;
+}
+
+.teacher-list__experience {
+    font-family: $list-text;
+    font-size: rem(14);
+    font-weight: 600;
+    line-height: rem(20);
+    color: $color-caption-white_page;
+    padding-top: rem(23);
+    padding-right: rem(160);
+    padding-left: rem(19);
+    padding-bottom: rem(34);
+}
+
+.teacher-list__technical-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    width: 100%;
+    padding-top: rem(19);
+    margin-bottom: rem(43);
+}
+
+.teacher-list__technical-skills--caption {
+    font-family: $font-caption;
+    font-size: rem(14);
+    font-weight: 700;
+    color: $color-caption-white_page;
+    margin-bottom: rem(27);
+}
+
+.teacher-list__technical-skills--text {
+    font-family: $semi-font;
+    font-size: rem(13);
+    font-weight: 700;
+    line-height: rem(18);
+    text-transform: uppercase;
+    padding-right: rem(45);
+    padding-left: rem(16);
+    padding-bottom: rem(22);
+}
+
+.teacher-list__experience--two-block {
+    font-family: $list-text;
+    font-size: rem(14);
+    font-weight: 600;
+    line-height: rem(20);
+    color: $color-caption-white_page;
+    background-color: #ffffff;
+    padding-right: rem(40);
+    padding-left: rem(20);
+    padding-bottom: rem(12);
+    &:last-child {
+        padding-right: rem(45);
+        padding-bottom: rem(20);
+    }
+}
+
+.teacher-list__shadow {
+    box-shadow: 0 rem(7) rem(17) rem(-4) rgba(0, 0, 0, 0.75);
+}
+
+.teacher-list__technical-skills--text-deco {
+    padding-right: rem(79);
+}
+
+.teacher-list__technical-skills--text-deco-v2 {
+    padding-right: rem(24);
+}
+
+.teacher-list__experience--deco {
+    padding-right: rem(30);
+}
+
+.start_course {
+    font-family: $font-caption;
+    font-size: rem(14);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(to right, rgba(255, 179, 27, 1) 0%, rgba(251, 27, 60, 1) 100%);
+    padding: 15px 0;
+    margin-bottom: rem(64);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.21);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+//========================================
+.reviews {
+    // position: relative;
+    width: rem(320);
+    margin: 0 auto;
+    padding-top: rem(52);
+}
+
+.section-caption--reviews {
+    padding: 0 rem(43);
+}
+
+.reviews__subtitle {
+    font-family: $font-caption;
+    font-size: rem(14);
+    font-weight: 700;
+    line-height: rem(20);
+    text-align: center;
+    color: $color-caption-white_page;
+    padding: 0 rem(33);
+    margin-bottom: rem(50);
+}
+
+.reviews-list {
+    width: rem(320);
+    margin: 0 auto;
+}
+
+.reviews-list-plus__elements {
+    display: flex;
+    &:last-child{
+        margin-bottom: rem(20);
+    }
+}
+
+.reviews-list-plus__text {
+    font-family: $list-text;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(20);
+    color: $color-caption-white_page;
+    margin-bottom: rem(30);
+}
+
+.reviews-list__background{
+    background-image: url('../img/comma.png');
+    background-repeat: no-repeat;
+    background-position-x: 180px;
+    background-position-y: 50px;
+    margin-bottom: rem(63);
+}
+.reviews-list__background--text{
+    font-family: $semi-font;
+    font-size: rem(18);
+    font-weight: 700;
+    line-height: rem(26);
+    color: $color-caption-white_page;
+}
+.reviews-video{
+    position: relative;
+}
+
+.reviews-video__items{
+    width: rem(290);
+    margin: 0 auto;
+}
+
+.btn-video--1{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.btn-video--2{
+    position: absolute;
+    top: 285px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.btn-video--3{
+    position: absolute;
+    top: 490px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }

@@ -12,7 +12,7 @@
 
 .bg-black {
     background-image: url('../img/background.png');
-    height: 1575px; // delete
+    height: rem(1575);
     margin: 0 auto;
 }
 
@@ -82,6 +82,10 @@
     line-height: rem(24);
     color: #ffffff;
     margin-bottom: rem(34);
+}
+
+.line-header{
+    display: none;
 }
 
 .career-list__item {
@@ -254,6 +258,10 @@
 
 .subtitle-text-deco--training-center {
     margin-bottom: rem(46);
+}
+
+.ambitious__img{
+    display: none;
 }
 
 .ambitious-purpose__caption {
@@ -931,3 +939,5 @@
     padding-right: rem(69);
     margin-bottom: rem(39);
 }
+
+@import "media";

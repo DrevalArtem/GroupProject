@@ -1,10 +1,303 @@
 // Tablet
-@media (min-width: 768px){
+@media (min-width: 768px) {
+    .container-main {
+        min-width: rem(768);
+        width: rem(768);
+        margin: 0 auto;
+    }
+    .bg-black {
+        height: rem(1590);  
+    }
+    .guarantee-main {
+        width: rem(768);
+        margin: 0 auto;
+        padding: 0;
+        padding-top: rem(85);
+    }
+    .section-caption {
+        font-size: rem(30);
+        line-height: rem(40);
+    }
+    .section-caption--white {
+        padding-right: rem(60);
+        &::after {
+            content: '';
+            display: block;
+            padding-top: rem(14);
+            margin-bottom: rem(44);
+        }
+    }
+    .guarantee__subtitle-text {
+        line-height: rem(24);
+        padding-left: rem(74);
+        padding-right: rem(210);
+        margin-bottom: rem(53);
+    }
+    .career__perspective {
+        display: inline-block;
+        font-size: rem(24);
+        font-weight: 700;
+        background-color: #fff;
+        color: $color-caption-white_page;
+        padding-top: rem(12);
+        padding-right: rem(74);
+        padding-bottom: rem(10);
+        padding-left: rem(10);
+        margin-left: rem(74);
+        margin-bottom: rem(7);
+    }
+    .line-header {
+        display: block;
+        height: rem(78);
+    }
+    .career-list {
+        display: flex;
+        position: relative;
+        margin-left: rem(71);
+    }
+    .career-list__item {
+        margin-bottom: rem(40);
+        &:nth-child(1) {
+            padding-right: 0;
+        }
+    }
+    .career-list__text--margin {
+        padding-left: rem(13);
+        margin-right: rem(117);
+    }
+    .icon-dot-header {
+        position: absolute;
+        top: rem(-57);
+    }
+    .guarantee-list {
+        position: relative;
+        width: rem(572);
+        height: rem(972);
+        margin: 0 auto;
+        padding-top: 0;
+        margin-bottom: rem(49);
+        box-shadow: 0 rem(4) rem(17) rem(-4) rgba(0, 0, 0, 0.75);
+    }
+    .guarantee-list__logo {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .guarantee-list__logo--deco {
+        display: block;
+        font-family: $semi-font;
+        font-size: rem(150);
+        font-weight: 700;
+        text-transform: uppercase;
+        opacity: 0.14;
+        text-shadow: 0px 18px 18px rgba(0, 0, 0, 1);
+    }
+    .guarantee__deco--guarantee {
+        display: block;
+        position: absolute;
+        top: rem(164);
+        right: rem(-87);
+        font-family: $semi-font;
+        font-size: rem(20);
+        letter-spacing: rem(3);
+        color: #ffffff;
+        transform: rotate(90deg);
+    }
+    .guarantee__deco--dream {
+        display: block;
+        position: absolute;
+        top: rem(25);
+        left: rem(-65);
+        font-family: $semi-font;
+        font-size: rem(30);
+        color: #ffffff;
+        transform: rotate(90deg);
+    }
+    .guarantee-list__text {
+        padding-left: rem(53);
+        padding-right: rem(55);
+    }
+    .advantage-list {
+        position: absolute;
+        padding-left: rem(32);
+    }
+    .advantage-list__item {
+        &:last-child {
+            padding: 0;
+        }
+    }
+    .advantage-list__text {
+        background-color: #2f2f31;
+        width: rem(502);
+        box-shadow: 0 rem(4) rem(17) rem(-4) rgba(0, 0, 0, 0.75);
+        padding-top: rem(43);
+        padding-left: rem(29);
+        margin-bottom: rem(20);
+    }
+    .advantage-list__text--under-the-text {
+        margin-bottom: rem(21);
+    }
+    .advantage-list__item--number {
+        padding-top: rem(31);
+        &::before {
+            content: '';
+            display: block;
+            margin-top: rem(20);
+        }
+    }
+    // ======================================
+
+    .training-center{
+        min-width: rem(768);
+        width: rem(768);
+        padding-top: rem(74);
+    }
+
+    .section-caption--black{
+        font-size: rem(29);
+        &::after{
+            content: '';
+            display: block;
+            border-bottom: none;
+        }
+    }
+
+    .training-center__prepare-demanded{
+        text-align: right;
+        padding-right: rem(8);
+        padding-bottom: rem(3);
+        border-bottom: rem(2) solid $color-caption-white_page;
+        width: rem(320);
+    }
+
+    .subtitle-text-deco--training-center{
+        background-color: $color-caption-white_page;
+        padding: rem(8);
+        margin-left: rem(196);
+        margin-top: rem(-4);
+    }
+
+    .ambitious{
+        display: flex;
+    }
+
+    .ambitious__img{
+        display: inline-block;
+        margin-left: rem(62);
+        padding-right: rem(19);
+    }
+
+    .ambitious-purpose__caption{
+        font-size: rem(16);
+        line-height: rem(24);
+        margin-right: rem(270);
+        margin-bottom: rem(18);
+    }
+
+    .ambitious-purpose__subtitle {
+        margin-right: rem(195);
+    }
+
+    .icon-dot-main{
+        display: none;
+    }
+
+    .ambitious-objectives{
+        margin-left: rem(-38);
+        &::after{
+            content: '';
+            display: block;
+            border-bottom: none;
+        }
+    }
+
+    .ambitious-objectives__item--text{
+        padding-right: rem(150);
+    }
+
+    .ambitious-objectives__item{
+        padding: 0;
+        margin-bottom: rem(26);
+    }
+
+    .ambitious-objectives__item--text{
+        padding-right: 23rem;
+        line-height: rem(24);
+    }
+
+    .ambitious-objectives__item--first-item{
+        margin-left: 0;
+    }
+
+    .subtitle-text-deco--main-color-line{
+        &::after{
+            content: '';
+            display:block;
+            border-bottom: rem(2) solid $main-color;
+            width: rem(287);
+            margin-left: rem(55);
+            padding-top: rem(2);
+        }
+    }
+    //===============================================
+
+    .graduates-work-company {
+        position: relative;
+        width: rem(570);
+        margin: 0 auto;
+    }
+    
+    .graduates-work-company__item{
+        margin-bottom: rem(8);
+    }
+
+    .graduates-work-company__link{
+        width: rem(184);
+        height: rem(187);
+    }
+
+    .graduates-work-company__link--logo{
+        top: rem(81);
+        left: rem(15);
+        width: rem(155);
+    }
+
+    .graduates-work-company__link--crytek{
+        top: rem(57);
+    }
+
+    .graduates-work-company__link--luxoft{
+        top: rem(54);
+    }
+
+    .graduates-work-company__item--inovecs{
+        position: absolute;
+        top: rem(391);
+        left: rem(193);
+    }
+
+    .graduates-work-company__item--luxoft{
+        position: absolute;
+        top: rem(195);
+        left: rem(193);
+    }
+
+    .graduates-work__text{
+        position: absolute;
+        top: rem(400);
+        left: rem(390);
+        margin-right: rem(10);
+        font-size: rem(22);
+        line-height: rem(26);
+        transform: rotate(90deg);
+    }
+
+    .graduates-work-company__text{
+        padding-top: rem(21);
+        margin-left: rem(94);
+        margin-right: rem(488);
+    }
 
 }
-
 
 // Desktop
-@media (min-width: 1146px){
-    
-}
+@media (min-width: 1146px) {}

@@ -33,6 +33,10 @@
     text-transform: uppercase;
 }
 
+.section-caption__add{
+    display: none;
+}
+
 .guarantee-main {
     padding-top: rem(40);
 }
@@ -243,6 +247,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 
 .training-center__prepare-demanded {
@@ -807,41 +812,42 @@
     margin: 0 auto;
 }
 
-.btn-video--1 {
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-    border: none;
-    outline: none;
-    background-color: transparent;
-}
+// .btn-video--1 {
+//     position: absolute;
+//     top: 80px;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     padding: 0;
+//     border: none;
+//     outline: none;
+//     background-color: transparent;
+// }
 
-.btn-video--2 {
-    position: absolute;
-    top: 285px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-    border: none;
-    outline: none;
-    background-color: transparent;
-}
+// .btn-video--2 {
+//     position: absolute;
+//     top: 285px;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     padding: 0;
+//     border: none;
+//     outline: none;
+//     background-color: transparent;
+// }
 
-.btn-video--3 {
-    position: absolute;
-    top: 490px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-    border: none;
-    outline: none;
-    background-color: transparent;
-}
+// .btn-video--3 {
+//     position: absolute;
+//     top: 490px;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     padding: 0;
+//     border: none;
+//     outline: none;
+//     background-color: transparent;
+// }
 
 // ==========================================
 .read-detailed {
+    position: relative;
     width: rem(320);
     margin: 0 auto;
 }

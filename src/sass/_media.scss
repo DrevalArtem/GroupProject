@@ -619,7 +619,7 @@
     .read-detailed {
         position: relative;
         width: rem(768);
-        &::after{
+        &::after {
             content: '';
             display: block;
             position: absolute;
@@ -696,7 +696,7 @@
         text-transform: uppercase;
         padding-right: 0;
         margin-bottom: rem(49);
-        &::before{
+        &::before {
             content: '';
             display: block;
             position: relative;
@@ -705,7 +705,7 @@
             border-top: rem(2) solid $color-caption-white_page;
             width: rem(295);
         }
-        &::after{
+        &::after {
             content: '';
             display: block;
             position: relative;
@@ -729,7 +729,7 @@
             text-decoration: none;
         }
     }
-    .start_course--detailed{
+    .start_course--detailed {
         margin-bottom: 0;
     }
 }
@@ -1152,7 +1152,7 @@
         margin-right: rem(97);
         font-size: rem(18);
         line-height: rem(30);
-        &::after{
+        &::after {
             content: '';
             display: block;
             position: absolute;
@@ -1232,13 +1232,10 @@
             background-image: url('../img/reviews-background-video.png');
             width: rem(672);
             height: rem(917);
-            box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);        
+            box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
         }
-    }
-
-    //==============================
-
-    .main-white__background--read-detailed{
+    } //==============================
+    .main-white__background--read-detailed {
         width: rem(1920);
         height: rem(1590);
         position: relative;
@@ -1247,11 +1244,10 @@
         background-repeat: no-repeat;
         background-position-y: 0;
         padding-top: rem(348);
-        
     }
-    .read-detailed{
+    .read-detailed {
         width: rem(1146);
-        &::before{
+        &::before {
             content: '';
             display: block;
             position: absolute;
@@ -1262,53 +1258,50 @@
             height: rem(945);
             z-index: 1;
         }
-        &::after{
+        &::after {
             content: '';
             display: block;
             top: rem(255);
-            left: rem(986);   
+            left: rem(986);
             height: rem(150);
         }
     }
-
-    .section-caption--no-black-line{
+    .section-caption--no-black-line {
         line-height: rem(50);
         padding: 0 rem(120);
         margin-bottom: rem(110);
     }
-
-    .wrap-read-detailed__list{
+    .wrap-read-detailed__list {
         width: rem(1146);
         z-index: 1;
     }
-
-    .rectangle-postion{
+    .rectangle-postion {
         padding-top: rem(31);
         padding-left: rem(50);
     }
-    .read-detailed__text{
+    .read-detailed__text {
         font-size: rem(18);
         line-height: rem(26);
         padding-left: rem(50);
     }
-    .rectangle__deco--main-position{
+    .rectangle__deco--main-position {
         margin-bottom: rem(16);
     }
     .read-detailed__link--deco {
         margin-top: rem(-3);
         margin-right: rem(40);
     }
-    .read-detailed__people-position{
+    .read-detailed__people-position {
         font-size: rem(14);
         margin-right: rem(40);
     }
-    .wrap-detailed-element{
+    .wrap-detailed-element {
         width: rem(1146);
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: baseline;
-        &::before{
+        &::before {
             content: '';
             display: block;
             position: absolute;
@@ -1318,7 +1311,7 @@
             width: rem(88);
             height: rem(180);
         }
-        &::after{
+        &::after {
             content: '';
             display: block;
             position: absolute;
@@ -1329,20 +1322,20 @@
             height: rem(730);
         }
     }
-    .read-detailed__history{
+    .read-detailed__history {
         font-size: rem(18);
         z-index: 1;
-        &::after{
+        &::after {
             content: '';
             display: block;
             left: rem(340);
             width: rem(400);
         }
     }
-    .wrap-read-detailed__list:nth-of-type(5){
+    .wrap-read-detailed__list:nth-of-type(5) {
         margin-bottom: rem(100);
     }
-    .start_course--detailed{
+    .start_course--detailed {
         z-index: 1;
     }
 }

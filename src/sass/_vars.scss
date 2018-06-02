@@ -11,20 +11,21 @@ $remWidth: 1rem;
 
 // -----------------------------------------project vars
 
-// $mainColor: ;
-
-// $mainFont: ;
-// $semiFont: ;
+$mainFont: 'Open Sans', sans-serif;
+$main-color: #00bcd4;
+$text-list: #d6d5d5;
+$backgrond-list: #313133;
+$under-the-text: #d6d5d5;
+$color-caption-white_page: #242427; 
+$color-caption-black_page: #fff; 
+$font-caption: 'Montserrat', sans-serif;
+$semi-font: 'Ubuntu Mono', monospace;
+$list-text: 'Open Sans', sans-serif;
 
 // -----------------------------------------grid settings
 $grid-gutter-width: 28px !default;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
-
-
-
-
-
+$grid-breakpoints: (xs: 0, sm: 320px, md: 768px, lg: 992px, xl: 1920px);
+$container-max-widths: (sm: 290px, md: 690px, lg: 960px, xl: 1146px);
 
 
 

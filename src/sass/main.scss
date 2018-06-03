@@ -599,7 +599,6 @@
   margin: 0 auto;
 }
 
-
 .form-wrap__input {
   width: rem(230);
   border: 0;
@@ -642,13 +641,46 @@
 }
 
 .form-wrap__check-lab {
+  position: relative;
   text-align: center;
+  cursor: pointer;
+  &::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: rem(-10);
+    width: rem(15);
+    height: rem(15);
+    border-width: 3px;
+    border-color: #fff;
+    border-style: solid;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.41);
+    margin-right: rem(35);
+  }
 }
 
 .form-wrap__check-lab-link {
   font-weight: 700;
 }
 
+.form-wrap__input-check:checked + .form-wrap__check-lab::before {
+  background-color: $main-color;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 // END FORM
 

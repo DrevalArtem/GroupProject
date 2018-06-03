@@ -1824,32 +1824,32 @@
     .advantage-list__text--under-the-text {
         margin-bottom: rem(15);
     } //=========================================
-    .main-white__background--angle {
-        position: relative;
-        width: rem(1920);
-        height: rem(852);
-        background-image: url('../img/background-decktop-angle.png');
-        z-index: 1;
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: rem(82);
-            right: 0;
-            background-color: $main-color;
-            width: rem(13);
-            height: rem(796);
-        }
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: rem(465);
-            background-color: $main-color;
-            width: rem(13);
-            height: rem(796);
-        }
-    }
+    //.main-white__background--angle {
+    //    position: relative;
+    //    width: rem(1920);
+    //    height: rem(852);
+    //    background-image: url('../img/background-decktop-angle.png');
+    //    z-index: 1;
+    //    &::before {
+    //        content: '';
+    //        display: block;
+    //        position: absolute;
+    //        top: rem(82);
+    //        right: 0;
+    //        background-color: $main-color;
+    //        width: rem(13);
+    //        height: rem(796);
+    //    }
+    //    &::after {
+    //        content: '';
+    //        display: block;
+    //        position: absolute;
+    //        top: rem(465);
+    //        background-color: $main-color;
+    //        width: rem(13);
+    //        height: rem(796);
+    //    }
+    //}
     .center-goit {
         width: rem(1146);
         padding-top: rem(166);
@@ -1952,23 +1952,23 @@
         width: rem(1146);
         padding-top: 0;
     }
-    .main-white__background--position {
-        position: absolute;
-        top: rem(-236);
-        right: rem(-389);
-        width: rem(1236);
-        height: rem(1206);
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: rem(-30);
-            left: rem(-690);
-            background-image: url('../img/texture-teacher-two.png');
-            width: rem(205);
-            height: rem(762);
-        }
-    }
+    //.main-white__background--position {
+    //    position: absolute;
+    //    top: rem(-236);
+    //    right: rem(-389);
+    //    width: rem(1236);
+    //    height: rem(1206);
+    //    &::after {
+    //        content: '';
+    //        display: block;
+    //        position: absolute;
+    //        top: rem(-30);
+    //        left: rem(-690);
+    //        background-image: url('../img/texture-teacher-two.png');
+    //        width: rem(205);
+    //        height: rem(762);
+    //    }
+    //}
     .teacher__subtitle {
         font-size: rem(18);
         line-height: rem(30);

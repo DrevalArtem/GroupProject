@@ -32,7 +32,7 @@
   justify-content: center;
   width: 100%;
   padding-top: rem(35);
-  background-color: #2c2b2f;
+  background-color: $backgrond-section;
   padding-bottom: rem(17);
 }
 
@@ -41,7 +41,7 @@
   display: flex;
   position: relative;
   justify-content: center;
-  background-color: #2c2b2f;
+  background-color: $backgrond-section;
 }
 
 .section-caption {
@@ -59,7 +59,7 @@
 
 .section-caption--black {
   text-align: center;
-  color: #242427;
+  color: $color-caption-white_page;
 }
 
 .first-bg__list-wrap {
@@ -77,15 +77,15 @@
   position: relative;
   padding-top: rem(12);
   padding-bottom: rem(12);
-  margin-left: 30px;
+  margin-left: rem(30);
 
   &::before {
     content: "";
     position: absolute;
     margin-right: rem(30);
     display: block;
-    top: 14px;
-    left: -30px;
+    top: rem(14);
+    left: rem(-30);
     width: rem(30);
     height: rem(30);
     background-image: url(../img/sprite/symbol-defs.svg);
@@ -97,12 +97,11 @@
 
 .first-bg__title {
   display: inline-block;
-  background-color: #2c2c2f;
+  background-color: $backgrond-section;
   padding-right: rem(5);
   padding-left: rem(5);
-
-  font-size: 24px;
-  font-family: "UbuntuMono";
+  font-size: rem(24);
+  font-family:$semi-font;
   color: $main-color;
   font-weight: 700;
   line-height: 1.667;
@@ -110,9 +109,9 @@
 }
 
 .first-bg__if {
-  font-size: 24px;
-  font-family: "UbuntuMono";
-  color: #242427;
+  font-size: rem(24);
+  font-family: $semi-font;
+  color: $color-caption-white_page;
   font-weight: 700;
   line-height: 1.667;
   text-align: left;
@@ -122,9 +121,9 @@
   display: block;
   padding-left: rem(10);
 
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: #242427;
+  font-size: rem(14);
+  font-family: $mainFont;
+  color: $color-caption-white_page;
   font-weight: bold;
   line-height: 1.714;
   text-align: left;
@@ -138,7 +137,7 @@
   padding-right: rem(30);
   padding-bottom: rem(25);
   padding-top: rem(30);
-  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.29);
 }
 
 .second-bg__list-item {
@@ -152,8 +151,8 @@
     position: absolute;
     display: block;
     box-sizing: border-box;
-    top: 14px;
-    left: -30px;
+    top: rem(14);
+    left: rem(-30);
     width: rem(30);
     height: rem(30);
     background-image: url(../img/sprite/red-dot.svg);
@@ -169,8 +168,8 @@
   padding-right: rem(5);
   padding-left: rem(5);
 
-  font-size: 24px;
-  font-family: "UbuntuMono";
+  font-size: rem(24);
+  font-family: $semi-font;
   color: $main-color;
   font-weight: 700;
   line-height: 1.667;
@@ -178,9 +177,9 @@
 }
 
 .second-bg__if {
-  font-size: 24px;
-  font-family: "UbuntuMono";
-  color: #242427;
+  font-size: rem(24);
+  font-family: $semi-font;
+  color: $color-caption-white_page;
   font-weight: 700;
   line-height: 1.667;
   text-align: left;
@@ -190,9 +189,9 @@
   display: block;
   padding-left: rem(10);
 
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: #242427;
+  font-size: rem(14);
+  font-family: $mainFont;
+  color: $color-caption-white_page;
   font-weight: bold;
   line-height: 1.714;
   text-align: left;
@@ -202,19 +201,19 @@
   width: rem(290);
   height: rem(55);
   border: none;
-  border-radius: 5px;
+  border-radius: rem(5);
   outline: none;
   background: linear-gradient(
     to right,
     rgba(255, 179, 27, 1) 0%,
     rgba(251, 27, 60, 1) 100%
   );
-  padding: 15px 0;
+  padding: rem(15) 0;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.21);
   color: #fff;
   text-transform: uppercase;
-  font-size: 14px;
-  font-family: "Raleway", sans-serif;
+  font-size: rem(14);
+  font-family: $second-semi-font;
   line-height: 1.857;
   text-shadow: 0px 1px 1px rgba(28, 28, 30, 0.32);
   cursor: pointer;
@@ -233,8 +232,8 @@
 }
 
 .first-bg__content {
-  font-size: 14px;
-  font-family: "Raleway", sans-serif;
+  font-size: rem(14);
+  font-family: $second-semi-font;
   color: #fff;
   text-transform: uppercase;
   line-height: 1.429;
@@ -270,7 +269,7 @@
 .loser-img__picture {
   display: block;
   position: relative;
-  width: 290px;
+  width: rem(290);
   height: auto;
   width: 100%;
   box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.09);
@@ -286,17 +285,17 @@
 .changes-list__text--first-l {
   padding-right: rem(20);
   padding-bottom: rem(33);
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(36, 36, 39);
+  font-size: rem(14);
+  font-family: $mainFont;
+  color: $color-caption-white_page;
   line-height: 1.857;
   text-align: left;
 }
 
 .changes-list__bold {
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(36, 36, 39);
+  font-size: rem(14);
+  font-family: $mainFont;
+  color: $color-caption-white_page;
   line-height: 1.857;
   text-align: left;
   font-weight: 700;
@@ -305,9 +304,9 @@
 .changes-list__text--second-l {
   padding-right: rem(80);
   padding-bottom: rem(19);
-  font-size: 16px;
-  font-family: "Open Sans";
-  color: rgb(36, 36, 39);
+  font-size: rem(16);
+  font-family: $mainFont;
+  color: $color-caption-white_page;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.5;
@@ -317,20 +316,20 @@
 .changes-list__text--third-l {
   padding-right: rem(24);
   padding-bottom: rem(33);
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(36, 36, 39);
+  font-size: rem(14);
+  font-family: $mainFont;
+  color: $color-caption-white_page;
   font-weight: bold;
   line-height: 1.429;
   text-align: left;
 }
 
 .changes-list__text--forth-l {
-  padding: 7px 22px 7px 27px;
+  padding: rem(7) rem(22) rem(7) rem(27);
   margin: 0 auto;
-  font-size: 14px;
-  font-family: "UbuntuMono";
-  color: rgb(36, 36, 39);
+  font-size: rem(14);
+  font-family: $semi-font;
+  color: $color-caption-white_page;
   font-weight: bold;
   line-height: 1.714;
   text-align: left;
@@ -346,25 +345,25 @@
   margin-left: rem(52);
   width: rem(238);
   height: rem(116);
-  border: 2px solid #2e2e31;
+  border: rem(2) solid #2e2e31;
   &::before {
     content: "";
     position: absolute;
     display: block;
-    left: -3px;
-    top: 15px;
-    width: 6px;
-    border-top: 62px solid #fff;
+    left: rem(-3);
+    top: rem(15);
+    width: rem(6);
+    border-top: rem(62) solid #fff;
   }
 
   &::after {
     content: "";
     position: absolute;
     display: block;
-    right: 12px;
-    bottom: -3px;
-    width: 95px;
-    border-bottom: 6px solid #fff;
+    right: rem(12);
+    bottom: rem(-3);
+    width: rem(95);
+    border-bottom: rem(6) solid #fff;
   }
 }
 
@@ -374,8 +373,8 @@
     content: "";
     position: absolute;
     display: block;
-    right: -8px;
-    top: 10px;
+    right: rem(-8);
+    top: rem(10);
     width: rem(286);
     height: rem(390);
     background-color: $main-color;
@@ -392,8 +391,8 @@
 
 .second-section-caption {
   font-size: rem(14);
-  font-family: "Raleway", sans-serif;
-  color: rgb(36, 36, 39);
+  font-family: $second-semi-font;
+  color: $color-caption-white_page;
   text-transform: uppercase;
   line-height: 1.714;
   text-align: center;
@@ -408,7 +407,7 @@
     width: rem(150);
     margin: 0 auto;
     margin-top: rem(10);
-    border-bottom: 2px solid #242427;
+    border-bottom: rem(2) solid $color-caption-white_page;
   }
 }
 
@@ -445,7 +444,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: rem(35);
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: rem(1) solid #e5e5e5;
 }
 
 .main-list-wrap__img-wrap {
@@ -469,9 +468,9 @@
 
 .main-list-wrap__name {
   display: block;
-  font-size: 24px;
-  font-family: "UbuntuMono";
-  color: rgb(36, 36, 39);
+  font-size: rem(24);
+  font-family: $semi-font;
+  color: $color-caption-white_page;
   font-weight: 700;
   line-height: 1.333;
 }
@@ -479,18 +478,18 @@
 .main-list-wrap__specialty {
   display: block;
   padding-bottom: 0;
-  font-size: 14px;
-  font-family: "UbuntuMono";
-  color: rgb(36, 36, 39);
+  font-size: rem(14);
+  font-family: $semi-font;
+  color: $color-caption-white_page;
   line-height: rem(14);
 }
 
 .main-list-wrap__title-tech-skills {
   margin-left: rem(18);
   margin-bottom: rem(36);
-  font-size: 20px;
-  font-family: "UbuntuMono";
-  color: rgb(36, 36, 39);
+  font-size: rem(20);
+  font-family: $semi-font;
+  color: $color-caption-white_page;
   font-weight: bold;
   line-height: 1.6;
   text-align: left;
@@ -499,15 +498,15 @@
     content: "";
     display: block;
     width: rem(80);
-    margin: 3px 0 0 0;
-    border-bottom: rem(2) solid #242427;
+    margin: rem(3) 0 0 0;
+    border-bottom: rem(2) solid $color-caption-white_page;
   }
 }
 
 .main-list-wrap__text {
   font-size: rem(14);
-  font-family: "Open Sans";
-  color: #242427;
+  font-family: $mainFont;
+  color: $color-caption-white_page;
   font-weight: bold;
   line-height: 1.429;
   text-align: left;
@@ -518,7 +517,7 @@
   padding-left: rem(4);
   padding-right: rem(4);
   color: $main-color;
-  background-color: #242427;
+  background-color: $color-caption-white_page;
 }
 
 .main-list-wrap__list-item {
@@ -556,9 +555,9 @@
   padding-left: rem(14);
   margin-bottom: rem(16);
   font-size: rem(18);
-  font-family: "Raleway", sans-serif;
+  font-family: $second-semi-font;
   font-weight: 700;
-  color: rgb(36, 36, 39);
+  color: $color-caption-white_page;
   text-transform: uppercase;
   line-height: 1.444;
   text-align: center;
@@ -575,8 +574,8 @@
 .form-wrap__second-title {
   margin-bottom: rem(35);
   font-size: rem(14);
-  font-family: "Raleway", sans-serif;
-  color: rgb(36, 36, 39);
+  font-family: $second-semi-font;
+  color: $color-caption-white_page;
   text-transform: uppercase;
   line-height: 1.429;
   font-weight: 700;
@@ -612,10 +611,10 @@
   padding-bottom: rem(5);
   background-color: transparent;
   text-align: center;
-  border-bottom: 1px solid #242427;
-  font-size: 14px;
-  font-family: "UbuntuMono";
-  color: rgb(36, 36, 39);
+  border-bottom: 1px solid $color-caption-white_page;
+  font-size: rem(14);
+  font-family: $semi-font;
+  color: $color-caption-white_page;
   font-weight: bold;
   line-height: 1.714;
 }
@@ -641,8 +640,8 @@
 .form-wrap__check-lab,
 .form-wrap__check-lab-link {
   font-size: rem(14);
-  font-family: "UbuntuMono";
-  color: rgb(36, 36, 39);
+  font-family: $semi-font;
+  color: $color-caption-white_page;
   line-height: 1.286;
 }
 
@@ -658,7 +657,7 @@
     left: rem(-10);
     width: rem(15);
     height: rem(15);
-    border-width: 3px;
+    border-width: rem(3);
     border-color: #fff;
     border-style: solid;
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.41);
@@ -677,9 +676,9 @@
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: rem(1);
+  height: rem(1);
+  margin: rem(-1);
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -695,15 +694,15 @@ input[type="checkbox"].visually-hidden {
   width: 100%;
   padding-top: rem(34);
   padding-bottom: rem(24);
-  background-color: #242427;
+  background-color: $color-caption-white_page;
 }
 
 .footer__title {
   display: block;
   margin: 0 auto;
   margin-bottom: rem(13);
-  font-size: 16px;
-  font-family: "Raleway", sans-serif;
+  font-size: rem(16);
+  font-family: $second-semi-font;
   color: #fff;
   line-height: 1.125;
   text-align: center;
@@ -714,7 +713,7 @@ input[type="checkbox"].visually-hidden {
     width: rem(158);
     margin: 0 auto;
     margin-top: rem(7);
-    border-bottom: 2px solid $main-color;
+    border-bottom: rem(2) solid $main-color;
   }
 }
 
@@ -728,9 +727,9 @@ input[type="checkbox"].visually-hidden {
   display: block;
   margin: 0 auto;
   margin-bottom: rem(8);
-  font-size: 16px;
-  font-family: "Raleway", sans-serif;
-  color: rgb(255, 255, 255);
+  font-size: rem(16);
+  font-family: $second-semi-font;
+  color: #fff;
   line-height: 1.5;
   font-weight: 700;
   text-align: center;
@@ -740,15 +739,15 @@ input[type="checkbox"].visually-hidden {
   display: block;
   margin: 0 auto;
   margin-bottom: rem(20);
-  border-radius: 4px;
+  border-radius: rem(4);
   border: none;
   cursor: pointer;
   background-color: $main-color;
-  width: 175px;
-  height: 34px;
-  font-size: 14px;
-  font-family: "Raleway", sans-serif;
-  color: rgb(36, 36, 39);
+  width: rem(175);
+  height: rem(34);
+  font-size: rem(14);
+  font-family: $second-semi-font;
+  color: $color-caption-white_page;
   text-transform: uppercase;
   line-height: 1.714;
   font-weight: 700;
@@ -762,7 +761,7 @@ input[type="checkbox"].visually-hidden {
     width: rem(150);
     margin: 0 auto;
     margin-bottom: rem(16);
-    border-top: 2px solid #fff;
+    border-top: rem(2) solid #fff;
   }
 }
 
@@ -798,17 +797,13 @@ input[type="checkbox"].visually-hidden {
 .footer__copy {
   display: block;
   margin: 0 auto;
-  font-size: 14px;
-  font-family: "Raleway", sans-serif;
+  font-size: rem(14);
+  font-family: $second-semi-font;
   color: rgb(255, 255, 255);
   line-height: 1.286;
   text-align: center;
 }
 
-.pict {
-  width: 100px;
-  height: 200px;
-}
 
 @import "media";
 // footer section

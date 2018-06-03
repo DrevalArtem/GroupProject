@@ -1,5 +1,6 @@
 
 // footer section
+
 // Tablet
 @media (min-width: 768px) {
   .main-wrapper {
@@ -53,10 +54,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 320px;
+      top: rem(320);
       right: 0;
-      width: 267px;
-      height: 361px;
+      width: rem(267);
+      height: rem(361);
       background-image: url(../img/x768.png);
       z-index: 2;
     }
@@ -103,7 +104,7 @@
   }
 
   .first-bg__content {
-    color: rgb(44, 43, 47);
+    color: $backgrond-section;
     text-align: left;
     padding-right: rem(40);
   }
@@ -137,7 +138,7 @@
   }
 
   .loser-img__picture {
-    width: 330px;
+    width: rem(330);
   }
 
   .changes-list {
@@ -151,9 +152,9 @@
       content: "";
       position: absolute;
       display: block;
-      top: 160px;
-      width: 360px;
-      border-bottom: 2px solid #2c2c2f;
+      top: rem(160);
+      width: rem(360);
+      border-bottom: rem(2) solid #2c2c2f;
     }
   }
 
@@ -161,29 +162,29 @@
     position: relative;
     &::after {
       content: "";
-      right: -8px;
-      top: 32px;
+      right: rem(-8);
+      top: rem(32);
       width: rem(310);
       height: rem(426);
-      box-shadow: 0px 31px 24px 0px rgba(0, 0, 0, 0.09);
+      box-shadow: 0 31px 24px 0 rgba(0, 0, 0, 0.09);
     }
     &::before {
       content: "";
       display: block;
       position: absolute;
-      right: 60px;
-      top: 50px;
+      right: rem(60);
+      top: rem(50);
       width: rem(290);
       height: rem(394);
       background-color: #ececec;
-      border-width: 10px;
+      border-width: rem(10);
       border-color: #fff;
       border-style: solid;
-      box-shadow: 0px 31px 24px 0px rgba(0, 0, 0, 0.09);
+      box-shadow: 0 31px 24px 0 rgba(0, 0, 0, 0.09);
       border-top: 0;
     }
   }
-  
+
   // -- Станьте уверенным начинающим iт-разработчиком --
   .title-wrapper--grey {
     padding-top: rem(50);
@@ -217,7 +218,7 @@
       bottom: rem(23);
       right: rem(15);
       width: rem(345);
-      border-bottom: 2px solid #242427;
+      border-bottom: rem(2) solid $color-caption-white_page;
     }
   }
 
@@ -312,9 +313,9 @@
     display: block;
     width: auto;
     margin: 0;
-    font-size: 14px;
-    font-family: "UbuntuMono";
-    color: rgb(36, 36, 39);
+    font-size: rem(14);
+    font-family: $semi-font;
+    color: $color-caption-white_page;
     font-weight: bold;
     line-height: 1.714;
     text-align: center;
@@ -361,7 +362,7 @@
       content: "";
       margin-left: 0;
       margin-top: rem(7);
-      border-bottom: 2px solid $main-color;
+      border-bottom: rem(2) solid $main-color;
     }
   }
 
@@ -517,7 +518,7 @@
   .start_course {
     width: rem(315);
     height: rem(55);
-    font-size: 16px;
+    font-size: rem(16);
   }
 
   .first-bg__cont-wrap {
@@ -533,7 +534,7 @@
     text-align: left;
     padding-right: rem(110);
     padding-left: rem(27);
-    font-size: 17px;
+    font-size: rem(17);
     font-weight: 700;
   }
 
@@ -543,9 +544,9 @@
       content: "";
       position: absolute;
       display: block;
-      width: 310px;
-      margin: 0 0 0 -40px;
-      border-bottom: 4px solid $main-color;
+      width: rem(310);
+      margin: 0 0 0 rem(-40);
+      border-bottom: rem(4) solid $main-color;
     }
   }
 
@@ -565,7 +566,7 @@
       display: block;
       content: "";
       position: absolute;
-      top: -300px;
+      top: rem(-300);
       left: 0;
       width: rem(299);
       height: rem(1178);
@@ -582,7 +583,7 @@
   }
 
   .loser-img__picture {
-    width: 500px;
+    width: rem(500);
   }
 
   .changes-list {
@@ -593,12 +594,12 @@
     padding-right: rem(64);
     padding-bottom: rem(85);
     padding-top: rem(105);
-    font-size: 20px;
+    font-size: rem(20);
     line-height: rem(32);
   }
 
   .changes-list__bold {
-    font-size: 20px;
+    font-size: rem(20);
     line-height: rem(32);
   }
 
@@ -606,30 +607,30 @@
     position: relative;
     &::after {
       content: "";
-      top: 275px;
-      width: 647px;
-      border-bottom: 4px solid #2c2c2f;
+      top: rem(275);
+      width: rem(647);
+      border-bottom: rem(4) solid #2c2c2f;
     }
   }
 
   .changes-list__text--second-l {
     padding-right: rem(65);
     padding-bottom: rem(20);
-    font-size: 20px;
+    font-size: rem(20);
     line-height: rem(32);
   }
 
   .changes-list__text--third-l {
     padding-right: rem(98);
     padding-bottom: rem(86);
-    font-size: 16px;
+    font-size: rem(16);
     line-height: rem(32);
   }
 
   .changes-list__text--forth-l {
-    padding: 7px 30px 7px 40px;
+    padding: rem(7) rem(30) rem(7) rem(40);
     margin: 0 auto;
-    font-size: 20px;
+    font-size: rem(20);
     line-height: rem(26);
   }
 
@@ -641,24 +642,24 @@
     margin-left: rem(212);
     width: rem(338);
     height: rem(137);
-    border: 3px solid #2e2e31;
+    border: rem(3) solid #2e2e31;
     &::before {
       content: "";
       position: absolute;
       display: block;
-      left: -4px;
-      top: 18px;
-      width: 8px;
-      border-top: 80px solid #fff;
+      left: rem(-4);
+      top: rem(18);
+      width: rem(8);
+      border-top: rem(80) solid #fff;
     }
     &::after {
       content: "";
       position: absolute;
       display: block;
-      right: 17px;
-      bottom: -4px;
-      width: 136px;
-      border-bottom: 8px solid #fff;
+      right: rem(17);
+      bottom: rem(-4);
+      width: rem(136);
+      border-bottom: rem(8) solid #fff;
     }
   }
 
@@ -666,8 +667,8 @@
     position: relative;
     &::after {
       content: "";
-      right: -46px;
-      top: 100px;
+      right: rem(-46);
+      top: rem(100);
       width: rem(475);
       height: rem(678);
     }
@@ -675,8 +676,8 @@
       content: "";
       display: block;
       position: absolute;
-      right: -35px;
-      top: 80px;
+      right: rem(-35);
+      top: rem(80);
       width: rem(600);
       height: rem(648);
     }
@@ -697,7 +698,7 @@
       bottom: rem(28);
       right: rem(10);
       width: rem(450);
-      border-bottom: 4px solid #242427;
+      border-bottom: rem(4) solid $color-caption-white_page;
     }
   }
 
@@ -709,8 +710,8 @@
     background-image: url(../img/bg-figure1920.png),
       url(../img/bg-rectangle.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: bottom, top 325px left 380px;
-    background-size: contain, 520px 400px;
+    background-position: bottom, top rem(325) left rem(380);
+    background-size: contain, rem(520) rem(400);
     z-index: 1;
   }
 
@@ -748,7 +749,7 @@
       content: "";
       background-color: rgb(244, 244, 244);
       opacity: 0.361;
-      box-shadow: 0px 20px 51px 0px rgba(0, 0, 0, 0.21);
+      box-shadow: 0 20px 51px 0 rgba(0, 0, 0, 0.21);
       position: absolute;
       right: rem(160);
       bottom: rem(297);
@@ -766,7 +767,7 @@
       right: rem(0);
       background-image: url(../img/background-white.png);
       z-index: 3;
-      box-shadow: 0px -20px 51px 0px rgba(0, 0, 0, 0.11);
+      box-shadow: 0 -20px 51px 0 rgba(0, 0, 0, 0.11);
     }
   }
 
@@ -841,7 +842,7 @@
       display: block;
       width: rem(80);
       margin: 3px 0 0 0;
-      border-bottom: rem(2) solid #242427;
+      border-bottom: rem(2) solid $color-caption-white_page7;
     }
   }
 

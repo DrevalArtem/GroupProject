@@ -792,6 +792,9 @@ input[type="checkbox"].visually-hidden {
 .footer__copy {
   display: block;
   margin: 0 auto;
+  width: rem(290);
+  padding-left: rem(41);
+  padding-right: rem(41);
   font-size: rem(14);
   font-family: $second-semi-font;
   color: rgb(255, 255, 255);
@@ -1142,6 +1145,10 @@ input[type="checkbox"].visually-hidden {
     width: rem(690);
   }
 
+  // .footer__row {
+  //   width: rem(690);
+  // }
+
   .footer__first-col {
     display: flex;
     justify-content: flex-start;
@@ -1175,6 +1182,7 @@ input[type="checkbox"].visually-hidden {
   .footer__copy {
     width: rem(410);
     margin-right: 0;
+    padding: 0;
     text-align: right;
   }
 

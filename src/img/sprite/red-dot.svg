@@ -19,8 +19,7 @@
 
 </defs>
 <g filter="url(#Filter_0)">
-<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="3px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(0, 188, 212)"
+<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="3px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 23, 67)"
  d="M14.500,3.499 C19.471,3.499 23.500,7.528 23.500,12.500 C23.500,17.469 19.471,21.500 14.500,21.500 C9.529,21.500 5.500,17.469 5.500,12.500 C5.500,7.528 9.529,3.499 14.500,3.499 Z"/>
 </g>
 </svg>
-

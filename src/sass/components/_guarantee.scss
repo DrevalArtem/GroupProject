@@ -216,7 +216,7 @@
     margin: 0 auto;
 }
 
-.center-goit {
+.training-center {
     padding-top: rem(53);
     width: rem(320);
     margin: 0 auto;
@@ -239,14 +239,14 @@
     }
 }
 
-.center-goit__text {
+.training-center__text {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
 }
 
-.center-goit__prepare-demanded {
+.training-center__prepare-demanded {
     font-family: $font-caption;
     font-size: rem(14);
     font-weight: 700;
@@ -255,7 +255,7 @@
     margin-bottom: rem(2);
 }
 
-.subtitle-text-deco--center-goit {
+.subtitle-text-deco--training-center {
     margin-bottom: rem(46);
 }
 
@@ -1116,7 +1116,7 @@
             margin-top: rem(20);
         }
     } // ======================================
-    .center-goit {
+    .training-center {
         min-width: rem(768);
         width: rem(768);
         padding-top: rem(74);
@@ -1129,14 +1129,14 @@
             border-bottom: none;
         }
     }
-    .center-goit__prepare-demanded {
+    .training-center__prepare-demanded {
         text-align: right;
         padding-right: rem(8);
         padding-bottom: rem(3);
         border-bottom: rem(2) solid $color-caption-white_page;
         width: rem(320);
     }
-    .subtitle-text-deco--center-goit {
+    .subtitle-text-deco--training-center {
         background-color: $color-caption-white_page;
         padding: rem(8);
         margin-left: rem(196);
@@ -1824,33 +1824,33 @@
     .advantage-list__text--under-the-text {
         margin-bottom: rem(15);
     } //=========================================
-    //.main-white__background--angle {
-    //    position: relative;
-    //    width: rem(1920);
-    //    height: rem(852);
-    //    background-image: url('../img/background-decktop-angle.png');
-    //    z-index: 1;
-    //    &::before {
-    //        content: '';
-    //        display: block;
-    //        position: absolute;
-    //        top: rem(82);
-    //        right: 0;
-    //        background-color: $main-color;
-    //        width: rem(13);
-    //        height: rem(796);
-    //    }
-    //    &::after {
-    //        content: '';
-    //        display: block;
-    //        position: absolute;
-    //        top: rem(465);
-    //        background-color: $main-color;
-    //        width: rem(13);
-    //        height: rem(796);
-    //    }
-    //}
-    .center-goit {
+    .main-white__background--angle {
+        position: relative;
+        width: rem(1920);
+        height: rem(852);
+        background-image: url('../img/background-decktop-angle.png');
+        z-index: 1;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: rem(82);
+            right: 0;
+            background-color: $main-color;
+            width: rem(13);
+            height: rem(796);
+        }
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: rem(465);
+            background-color: $main-color;
+            width: rem(13);
+            height: rem(796);
+        }
+    }
+    .training-center {
         width: rem(1146);
         padding-top: rem(166);
         margin-top: rem(-50);
@@ -1858,7 +1858,7 @@
     .section-caption {
         font-size: rem(42);
     }
-    .center-goit__prepare-demanded {
+    .training-center__prepare-demanded {
         font-size: rem(18);
         padding-right: 0;
         width: rem(431);
@@ -1866,7 +1866,7 @@
     .subtitle-text-deco {
         font-size: rem(18);
     }
-    .subtitle-text-deco--center-goit {
+    .subtitle-text-deco--training-center {
         text-transform: uppercase;
         margin-left: rem(250);
     }
@@ -1952,23 +1952,23 @@
         width: rem(1146);
         padding-top: 0;
     }
-    //.main-white__background--position {
-    //    position: absolute;
-    //    top: rem(-236);
-    //    right: rem(-389);
-    //    width: rem(1236);
-    //    height: rem(1206);
-    //    &::after {
-    //        content: '';
-    //        display: block;
-    //        position: absolute;
-    //        top: rem(-30);
-    //        left: rem(-690);
-    //        background-image: url('../img/texture-teacher-two.png');
-    //        width: rem(205);
-    //        height: rem(762);
-    //    }
-    //}
+    .main-white__background--position {
+        position: absolute;
+        top: rem(-236);
+        right: rem(-389);
+        width: rem(1236);
+        height: rem(1206);
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: rem(-30);
+            left: rem(-690);
+            background-image: url('../img/texture-teacher-two.png');
+            width: rem(205);
+            height: rem(762);
+        }
+    }
     .teacher__subtitle {
         font-size: rem(18);
         line-height: rem(30);

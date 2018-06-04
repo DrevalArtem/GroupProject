@@ -1,3 +1,4 @@
+
 // -------------variables-------------
 
 .col-12, .col-sm-12 {
@@ -25,7 +26,7 @@
 // --------section prices------------ 
 
 .prices {
-    padding-top: rem(58); 
+    padding-top: rem(58);
     text-align: center;
 }
 .section-caption-white {
@@ -342,7 +343,7 @@
 }
 .course-difference-list-span {
     margin-right: rem(20);
-    
+
 }
 .course-difference-list-span__text {
     font-family: $list-text;
@@ -533,7 +534,7 @@
 }
 .faq-box-list__text, input[type="checkbox"] {
     display: none;
-  }
+}
 input[type="checkbox"]:checked ~ .faq-box-list__text {
     display: block;
     background-color: #ffffff;
@@ -576,23 +577,23 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
 
 
     // -------------variables-------------
-    
+
     .container-fluid {
-            min-width: rem(768);
-            margin: 0 auto;
-        }
+        min-width: rem(768);
+        margin: 0 auto;
+    }
     .container {
-            max-width: rem(690);
-            margin: 0 auto;
-        }
-    
+        max-width: rem(690);
+        margin: 0 auto;
+    }
+
     .container-main--bgd {
         background-image: url('../img/podlogka_shum-min.png');
         background-repeat: repeat;
     }
-    
+
     // --------section prices------------
-    
+
     .prices-header {
         display: flex;
         flex-direction: column;
@@ -664,9 +665,9 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         right: rem(80);
     }
 
-    
+
     // --------section cource-difference----------
-    
+
     .course-difference {
         background-color: #fafafa;
         box-shadow: 0px 22px 20px 0px rgba(0, 0, 0, 0.12);
@@ -731,9 +732,9 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         margin-bottom: 0;
         padding-bottom: rem(35);
     }
-    
+
     // ----------section graduate-skiils--------------
-    
+
     .graduate-skills-image {
         background-image: url('../img/code_2-min.png');
         height: rem(180);
@@ -758,7 +759,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         &::before {
             background-image: none;
             display: none;
-        }  
+        }
     }
     .bgd-graduate-skills {
         position: absolute;
@@ -879,9 +880,9 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .faq-box__subtitle--first {
         margin-left: rem(10);
-        padding-left: rem(149); 
+        padding-left: rem(149);
         border-bottom: rem(3) solid $color-caption-white_page;
-        width: rem(313);    
+        width: rem(313);
     }
     .faq-box__subtitle--second {
         margin-left: rem(185);
@@ -889,15 +890,15 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
 }
 
-    // Desktop
-    @media (min-width: 1146px) {
-    
+// Desktop
+@media (min-width: 1146px) {
+
     // -------------variables-------------
-    
+
     .container-fluid {
         max-width: rem(1920);
         margin: 0 auto;
-        overflow: hidden;
+        // overflow: hidden;
     }
     .container {
         max-width: rem(1146);
@@ -908,7 +909,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
 
     // --------section prices------------
-    
+
     .prices {
         padding-top: rem(275);
         position: relative;
@@ -939,7 +940,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         top: rem(410);
         right: rem(-285);
         z-index: -1;
-    } 
+    }
     .prices-header {
         display: flex;
         flex-direction: column;
@@ -1010,7 +1011,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         }
         &__title {
             font-size: rem(14)
-;        }
+        ;        }
     }
     .list-fullstack-info__skills {
         color: #b5b5b5;
@@ -1082,7 +1083,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
 
     // --------section cource-difference----------
-    
+
     .course-difference {
         background-color: #fafafa;
         box-shadow: 0px 22px 20px 0px rgba(0, 0, 0, 0.12);
@@ -1100,7 +1101,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             border-bottom: rem(40) solid $main-color;
             border-left: rem(40) solid $main-color;
             background-color: #fafafa;
-            z-index: -1; 
+            z-index: -1;
         }
         &__title {
             padding-top: rem(140);
@@ -1177,12 +1178,12 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             border-bottom: rem(10) solid #fafafa;
             top: rem(-6);
             left: rem(40);
-            width: rem(375);  
+            width: rem(375);
         }
     }
 
     // ----------section graduate-skiils--------------
-    
+
     .graduate-skills-image {
         background-image: url('../img/code_3-min.png');
         background-repeat: no-repeat;
@@ -1212,16 +1213,16 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     .graduate-skills-box {
         position: relative;
         &::after {
-        position: absolute;
-        display: block;
-        content: "";
-        width: rem(475);
-        height: rem(970);
-        background-image: url('../img/1272-min.png');
-        background-repeat: no-repeat;
-        top: rem(-130);
-        right: rem(-250);
-        z-index: -1;
+            position: absolute;
+            display: block;
+            content: "";
+            width: rem(475);
+            height: rem(970);
+            background-image: url('../img/1272-min.png');
+            background-repeat: no-repeat;
+            top: rem(-130);
+            right: rem(-250);
+            z-index: -1;
         }
     }
     .graduate-skills__title {
@@ -1326,7 +1327,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         right: rem(-40);
         top: rem(230);
         z-index: 2;
-        
+
     }
     .faq-box__title {
         font-size: rem(42);
@@ -1343,9 +1344,9 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .faq-box__subtitle--first {
         margin-left: rem(0);
-        padding-left: rem(249); 
+        padding-left: rem(249);
         border-bottom: rem(3) solid $color-caption-white_page;
-        width: rem(460);    
+        width: rem(460);
     }
     .faq-box__subtitle--second {
         margin-left: rem(282);

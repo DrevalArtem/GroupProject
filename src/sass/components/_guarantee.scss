@@ -6,7 +6,7 @@
 
 .bg-black {
     background-image: url('../img/background.png');
-    height: rem(1575);
+    // height: rem(1575);
     margin: 0 auto;
 }
 
@@ -969,9 +969,9 @@
         width: rem(768);
         margin: 0 auto;
     }
-    .bg-black {
-        height: rem(1590);
-    }
+    // .bg-black {
+    //     height: rem(1590);
+    // }
     .main-white__background--angle {
         background-image: url('../img/bg-white-angle.png');
         height: rem(1108);
@@ -1703,7 +1703,7 @@
     .bg-black {
         min-width: rem(1920);
         width: 100%;
-        height: rem(873);
+        // height: rem(873);
     }
     .container-content {
         min-width: rem(1200);

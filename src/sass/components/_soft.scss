@@ -2,6 +2,8 @@
 
 .main-wrapper {
   margin: 0 auto;
+  min-width: 320px;
+  max-width: 1920px;
 
 }
 
@@ -20,7 +22,7 @@ h3 {
 }
 
 .soft_skills {
-  text-align: center;
+  text-align: left;
   padding-top: 55px;
   margin-bottom: 30px;
   &-subheading {
@@ -132,6 +134,8 @@ h3 {
 .schedule {
   background-image: url("../img/noize_light.png");
   padding: 35px 0 0;
+  min-width: 320px;
+  max-width: 1920px;
 
   &-wrapper {
     margin: 0 15px;
@@ -248,6 +252,8 @@ h3 {
 .way {
   padding-top: 35px;
   padding-bottom: 35px;
+  min-width: 320px;
+  max-width: 1920px;
 
   &__content{
 
@@ -255,7 +261,7 @@ h3 {
     &-heading {
       font-size: 24px;
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
      }
 
 }
@@ -291,8 +297,15 @@ flex: 1;
   }
 }
 
+.osnovnoy{
+  min-width: 320px;
+  max-width: 1920px;
+}
+
 .osnovnoy-wrapper{
   background-image: url("../img/noize_light.png");
+  min-width: 320px;
+  max-width: 1920px;
 }
 
 .zarplata-item{
@@ -400,6 +413,10 @@ flex: 1;
   .main-wrapper {
     position: relative;
     z-index: 1;
+  }
+
+  .container-content {
+    padding: 0 26px 60px 26px;
   }
 
   .schedule-heading {
@@ -535,7 +552,13 @@ flex: 1;
       align-items: center;
     }
   }
+
+  .osnovnoy {
+    background-image: url(../img/noize_light.png);
+  }
+
   .osnovnoy-wrapper {
+    margin: 0 auto;
     &__second {
       margin: 0 30px;
       box-shadow: 0 3px 24px rgba(0,0,0,0.3);

@@ -199,9 +199,9 @@
   border-radius: rem(5);
   outline: none;
   background: linear-gradient(
-                  to right,
-                  rgba(255, 179, 27, 1) 0%,
-                  rgba(251, 27, 60, 1) 100%
+    to right,
+    rgba(255, 179, 27, 1) 0%,
+    rgba(251, 27, 60, 1) 100%
   );
   padding: rem(15) 0;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.21);
@@ -793,8 +793,8 @@ input[type="checkbox"].visually-hidden {
   display: block;
   margin: 0 auto;
   width: rem(290);
-  padding-left: rem(41);
-  padding-right: rem(41);
+  padding-left: rem(40);
+  padding-right: rem(40);
   font-size: rem(14);
   font-family: $second-semi-font;
   color: rgb(255, 255, 255);
@@ -1145,9 +1145,10 @@ input[type="checkbox"].visually-hidden {
     width: rem(690);
   }
 
-  // .footer__row {
-  //   width: rem(690);
-  // }
+  .footer__row {
+    width: rem(690);
+    margin: 0 auto;
+  }
 
   .footer__first-col {
     display: flex;
@@ -1181,8 +1182,8 @@ input[type="checkbox"].visually-hidden {
 
   .footer__copy {
     width: rem(410);
-    margin-right: 0;
     padding: 0;
+    margin-right: 0;
     text-align: right;
   }
 
@@ -1230,6 +1231,7 @@ input[type="checkbox"].visually-hidden {
   .title-wrapper {
     padding-top: rem(95);
     padding-bottom: rem(100);
+    z-index: 0;
   }
 
   .title-wrapper--grey {
@@ -1261,6 +1263,7 @@ input[type="checkbox"].visually-hidden {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
+      z-index: 1;
     }
   }
 
@@ -1518,7 +1521,7 @@ input[type="checkbox"].visually-hidden {
     height: rem(1472);
     padding-bottom: rem(40);
     background-image: url(../img/bg-figure1920.png),
-    url(../img/bg-rectangle.png);
+      url(../img/bg-rectangle.png);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, top rem(325) left rem(380);
     background-size: contain, rem(520) rem(400);
@@ -1717,7 +1720,7 @@ input[type="checkbox"].visually-hidden {
     margin-left: rem(45);
   }
 
-  .form-wrap__check-lab {
+    .form-wrap__check-lab {
     margin-right: rem(20);
   }
 
@@ -1726,6 +1729,11 @@ input[type="checkbox"].visually-hidden {
   .footer {
     padding-top: rem(30);
     padding-bottom: rem(32);
+  }
+
+  .footer__row {
+    width: rem(1146);
+    margin: 0 auto;
   }
 
   .footer__title {

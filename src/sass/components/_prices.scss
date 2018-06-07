@@ -10,12 +10,14 @@
     font-family: $list-text;
     font-weight: bold;
 }
-.container-fluid {
+.container-prices-fluid {
     min-width: rem(320);
     margin: 0 auto;
+    padding: 0;
 }
-.container {
-    max-width: rem(290);
+.container-prices {
+    min-width: rem(290);
+    width: rem(290);
     margin: 0 auto;
 }
 .container-main--bgd {
@@ -33,8 +35,9 @@
     padding: 0;
     color: #ffffff;
     font-family: $font-caption;
-    font-size: rem(25);
+    font-size: rem(23);
     text-transform: uppercase;
+    font-weight: bold;
     &:first-letter {
         color: $main-color;
     }
@@ -220,7 +223,7 @@
 .list-fullstack__price--online {
     color: #ffc600;
 }
-.start_course{
+.list-fullstack__btn, .graduate-skills-articles__btn {
     border: none;
     border-radius: 5px;
     outline: none;
@@ -229,6 +232,9 @@
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.21);
     color: #fff;
     text-transform: uppercase;
+    font-size: rem(16);
+    font-weight: bold;
+    cursor: pointer;
 }
 .list-fullstack__btn {
     margin-bottom: rem(40);
@@ -306,7 +312,7 @@
 .course-difference {
     color: $color-caption-white_page;
 }
-.section-caption-black {
+.course-difference__title {
     padding-top: rem(60);
     margin-bottom: rem(58);
     font-family: $font-caption;
@@ -370,13 +376,14 @@
         padding-top: rem(10);
         margin-right: rem(20);
         margin-bottom: rem(20);
+        padding-right: rem(20);
     }
     &__text {
         font-family: $list-text;
         font-size: rem(14);
         line-height: 1.714;
         font-weight: 500;
-        margin-right: rem(40);
+        padding-right: rem(30);
     }
     &__thumbnail {
         font-family: $list-text;
@@ -392,17 +399,31 @@
 
 .graduate-skills {
     position: relative;
+    margin-bottom: rem(40);
     &::before{
         background-image: url('../img/1125-min.png');
         background-repeat: repeat;
         content: "";
         width: rem(320);
-        height: rem(1525);
+        height: rem(1510);
         display: block;
         position: absolute;
         left: rem(-15);
         top: 0;
         z-index: -1;
+    }
+    &__title {
+        font-family: $font-caption;
+        font-size: rem(25);
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        line-height: 1.2;
+        padding-top: rem(55);
+        margin-bottom: rem(40);
+        &:first-letter {
+            color: $main-color;
+        }
     }
 }
 .graduate-skills-image {
@@ -496,6 +517,7 @@
 .graduate-skills-articles__btn {
     margin-left: rem(25);
     margin-bottom: rem(45);
+    font-size: rem(14);
 }
 
 // -----------section faq----------------------
@@ -506,6 +528,16 @@
 }
 .faq-box__title {
     margin-bottom: rem(20);
+    font-size: rem(24);
+    font-family: $font-caption;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.2;
+    padding-top: rem(55);
+        &:first-letter {
+            color: $main-color;
+        }
     &::after {
         border-bottom: rem(3) solid $color-caption-white_page;
         content: "";
@@ -534,7 +566,10 @@
 }
 .faq-box-list__text, input[type="checkbox"] {
     display: none;
-  }
+}
+.faq-box-list__plus {
+    display: none;
+}
 input[type="checkbox"]:checked ~ .faq-box-list__text {
     display: block;
     background-color: #ffffff;
@@ -571,19 +606,19 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     padding-top: rem(20);
 }
 
-
 // Tablet
-@media (min-width: 768px) and (max-width: 1145px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 
 
     // -------------variables-------------
     
-    .container-fluid {
+    .container-prices-fluid {
             min-width: rem(768);
             margin: 0 auto;
         }
-    .container {
-            max-width: rem(690);
+    .container-prices {
+            min-width: rem(690);
+            width: rem(690);
             margin: 0 auto;
         }
     
@@ -599,7 +634,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         flex-direction: column;
         align-items: center;
     }
-    .section-caption-white {
+    .prices-header__title {
         font-size: rem(30);
         line-height: 1.333;
         font-weight: bold;
@@ -688,10 +723,10 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             z-index: -1;
         }
     }
-    .section-caption-black {
+    .course-difference__title {
         font-size: rem(30);
-        padding-left: rem(100);
-        padding-right: rem(100);
+        padding-left: rem(70);
+        padding-right: rem(70);
         line-height: 1.333;
     }
     .course-difference-list {
@@ -737,8 +772,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     
     .graduate-skills-image {
         background-image: url('../img/code_2-min.png');
-        height: rem(180);
-        margin-bottom: rem(50);
+        height: rem(180);   
     }
     .graduate-skills {
         position: relative;
@@ -753,7 +787,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             content: "";
             position: absolute;
             left: rem(-39);
-            bottom: rem(-80);
+            bottom: rem(-65);
             z-index: -1;
         }
         &::before {
@@ -766,13 +800,23 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         background-image: url('../img/1328-min.png');
         background-repeat: no-repeat;
         width: rem(768);
-        height: rem(1430);
+        height: rem(1480);
         right: rem(-39);
         top: rem(-450);
         z-index: -1;
     }
     .graduate-skills__title {
         padding: 0;
+        font-size: rem(30);
+        line-height: 1.333;
+        font-family: $font-caption;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: rem(60);
+        &:first-letter {
+            color: $main-color;
+        }
     }
     .graduate-skills-article-box::before {
         border-bottom: rem(3) solid $main-color;
@@ -780,20 +824,17 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         width: rem(555);
         display: block;
         margin-left: rem(50);
-        padding: 0;
     }
     .graduate-skills-article-box__title {
         text-align: left;
         padding-left: rem(50);
         padding-right: rem(200);
     }
-    .graduate-skills-article-list {
-        margin-bottom: rem(45);
-    }
+    
     .graduate-skills-article-box__title--second {
         text-align: left;
         padding-left: rem(50);
-        padding-right: rem(355);
+        padding-right: rem(340);
     }
     .graduate-skills-article__text {
         padding-left: rem(50);
@@ -816,7 +857,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             content: "";
             display: block;
             border-bottom: rem(6) solid #fafafa;
-            top: rem(110);
+            top: rem(136);
             left: rem(340);
             width: rem(90);
         }
@@ -833,6 +874,14 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             font-size: rem(16);
         }
     }
+    .course-certificate-bgd__text::before {
+        border-left: rem(6) solid #fafafa;
+        position: absolute;
+        content: "";
+        display: block;
+        height: rem(53);
+        left: rem(-5);
+    }
     .graduate-skills-articles__btn {
         height: rem(56);
         font-size: rem(14);
@@ -840,6 +889,9 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .graduate-skills-box {
         box-shadow: inherit;
+    }
+    .graduate-skills-article-list__item {
+        padding-right: rem(185);
     }
 
     // -----------section faq----------------------
@@ -871,6 +923,14 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .faq-box__title {
         padding: 0;
+        font-size: rem(29);
+        line-height: 1.333;
+        font-family: $font-caption;
+        text-transform: uppercase;
+        font-weight: 900;
+        &:first-letter {
+            color: $main-color;
+        }
         &::after {
             border-bottom: none;
         }
@@ -888,25 +948,53 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         margin-left: rem(185);
         margin-bottom: rem(125);
     }
+    .faq-box-list__item {
+        position: relative;
+    }
+    .faq-box-list__plus {
+        display: block;
+        content: "";
+        width: rem(41);
+        height: rem(41);
+        &::after {
+            border-bottom: rem(1) solid $color-caption-white_page;
+            position: absolute;
+            width: rem(41);
+            display: block;
+            content: "";
+            top: rem(50);
+            right: rem(57);
+        }
+        &::before {
+            border-right: rem(1) solid $color-caption-white_page;
+            position: absolute;
+            height: rem(41);
+            display: block;
+            content: "";
+            top: rem(30);
+            right: rem(77);
+        }
+    }
 }
-
+  
     // Desktop
-    @media (min-width: 1146px) {
+    @media (min-width: 1200px) {
     
     // -------------variables-------------
     
-    .container-fluid {
+    .container-prices-fluid {
         max-width: rem(1920);
         margin: 0 auto;
-        // overflow: hidden;
+        overflow: hidden;
     }
-    .container {
-        max-width: rem(1146);
+    .container-prices {
+        min-width: rem(1146);
+        width: rem(1146);
         margin: 0 auto;
     }
     .container-main--bgd {
         background-repeat: repeat;
-    }
+    } 
 
     // --------section prices------------
     
@@ -967,7 +1055,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             width: rem(470);
             display: block;
             position: absolute;
-            right: rem(165);
+            right: rem(152);
         }
     }
     .prices-header-guarantee__subtitle--first, .prices-header-guarantee__subtitle--second, .prices-header-guarantee__text, .prices-header-duration__title,
@@ -1089,7 +1177,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         box-shadow: 0px 22px 20px 0px rgba(0, 0, 0, 0.12);
         position: relative;
         z-index: 15;
-        margin-bottom: rem(70);
+        margin-bottom: rem(100);
         &::after {
             content: "";
             position: absolute;
@@ -1106,8 +1194,8 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         &__title {
             padding-top: rem(140);
             font-size: rem(42);
-            padding-left: rem(235);
-            padding-right: rem(230);
+            padding-left: rem(200);
+            padding-right: rem(200);
         }
     }
     .course-difference-list {
@@ -1185,6 +1273,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     // ----------section graduate-skiils--------------
     
     .graduate-skills-image {
+        width: 100%;
         background-image: url('../img/code_3-min.png');
         background-repeat: no-repeat;
         height: rem(915);
@@ -1202,7 +1291,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         background-image: url('../img/1329-min.png');
         background-repeat: no-repeat;
         width: rem(1920);
-        height: rem(1450);
+        height: rem(1410);
         right: rem(-387);
         top: rem(-500);
         z-index: -2;
@@ -1227,15 +1316,27 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .graduate-skills__title {
         font-size: rem(42);
+        font-family: $font-caption;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: rem(85);
+        &:first-letter {
+            color: $main-color;
+        }
     }
     .graduate-skills-article-box {
-        margin-bottom: rem(60);
+        margin-bottom: rem(0);
+        &::before {
+            width: rem(555);
+            margin-left: rem(-150);
+        }
     }
     .graduate-skills-article-box__title {
         font-size: rem(22);
         text-align: left;
-        padding-right: rem(169);
-        padding-left: rem(46);
+        padding-right: rem(146);
+        padding-left: rem(46.5);
     }
     .graduate-skills-article-list__thumbnail, .graduate-skills-article-list__text {
         font-size: rem(18);
@@ -1289,6 +1390,9 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         height: rem(65);
         margin-bottom: 0;
     }
+    .graduate-skills-article-list__item {
+        padding-right: 0;
+    }
 
     // -----------section faq----------------------
 
@@ -1334,6 +1438,12 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         text-align: left;
         padding-right: rem(125);
         padding-top: 0;
+        font-family: $font-caption;
+        text-transform: uppercase;
+        font-weight: 900;
+        &:first-letter {
+            color: $main-color;
+        }
     }
     .faq-box__title::after {
         border-bottom: none;

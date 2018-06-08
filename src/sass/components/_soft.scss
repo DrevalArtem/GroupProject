@@ -11,7 +11,7 @@
   background-image: url("../img/noize_dark.png");
 }
 
-.container-content {
+.container-content-soft {
   padding: 0 0 60px 0;
 }
 
@@ -415,7 +415,7 @@ flex: 1;
     z-index: 1;
   }
 
-  .container-content {
+  .container-content-soft {
     padding: 0 26px 60px 26px;
   }
 
@@ -560,7 +560,7 @@ flex: 1;
   .osnovnoy-wrapper {
     margin: 0 auto;
     &__second {
-      margin: 0 30px;
+      //margin: 0 30px;
       box-shadow: 0 3px 24px rgba(0,0,0,0.3);
       position: relative;
       top: -30px;

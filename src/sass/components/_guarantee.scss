@@ -1,8 +1,6 @@
-.container-main {
-    min-width: rem(320);
-    width: rem(320);
-    margin: 0 auto;
-}
+// .container-main-guarantee {
+//     margin: 0 auto;
+// }
 
 .bg-black {
     background-image: url('../img/background.png');
@@ -542,7 +540,6 @@
 //========================================
 .teacher {
     position: relative;
-    width: rem(320);
     margin: 0 auto;
 }
 
@@ -555,6 +552,8 @@
 }
 
 .wrapper-teacher {
+    width: rem(320);
+    margin: 0 auto;
     z-index: 1;
 }
 
@@ -971,8 +970,7 @@
 
 // Tablet
 @media (min-width: 768px) {
-    .container-main {
-        min-width: rem(768);
+    .container-main-guarantee {
         width: rem(768);
         margin: 0 auto;
     }
@@ -1702,20 +1700,17 @@
 
 // Desktop
 @media (min-width: 1200px) {
-    .container-main {
-        // min-width: rem(1200);
-        // width: rem(1200);
-        margin: 0 auto;
-    }
+    // .container-main-guarantee {
+    //     width: rem(1146);
+    //     margin: 0 auto;
+    // }
     // .bg-black {
-    //     min-width: rem(1920);
     //     width: 100%;
     // }
-    .container-content {
-        // min-width: rem(1200);
-        // width: 100%;
-        margin: 0 auto;
-    }
+    // .container-content-guarantee {
+    //     width: 100%;
+    //     margin: 0 auto;
+    // }
     .guarantee {
         margin-top: rem(50);
         margin-left: auto;
@@ -1725,8 +1720,7 @@
         padding: 0;
     }
     .guarantee-main {
-        // min-width: rem(1200);
-        // width: rem(1146);
+        width: rem(1146);
         padding-top: 0;
     }
     .guarantee-list {
@@ -1833,7 +1827,7 @@
     } //=========================================
     .main-white__background--angle {
        position: relative;
-    //    width: rem(1920);
+    //    width: rem(1146);
        height: rem(852);
        background-image: url('../img/background-decktop-angle.png');
        z-index: 1;
@@ -1942,7 +1936,7 @@
         }
     }
     // .our-pride__wrap {
-    //     // width: rem(1146);
+    //     width: rem(1146);
     // }
     .our-pride__bg-list--first-block {
         width: rem(562);
@@ -2116,9 +2110,9 @@
         margin-left: 0;
         margin-right: rem(800);
     }
-    .reviews-list {
-        width: rem(1146);
-    }
+    // .reviews-list {
+    //     width: rem(1146);
+    // }
     .reviews__subtitle {
         margin-right: rem(97);
         font-size: rem(18);
@@ -2207,7 +2201,7 @@
         }
     } //==============================
     .main-white__background--read-detailed {
-        // width: rem(1920);
+        // width: rem(1146);
         height: rem(1590);
         position: relative;
         top: rem(-180);
@@ -2217,7 +2211,7 @@
         padding-top: rem(348);
     }
     .read-detailed {
-        // width: rem(1146);
+        width: rem(1146);
         &::before {
             content: '';
             display: block;

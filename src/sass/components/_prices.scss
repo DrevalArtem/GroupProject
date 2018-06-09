@@ -1,0 +1,1454 @@
+
+// -------------variables-------------
+
+.col-12-prices, .col-sm-12-prices {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.subtitle-text-deco {
+    color: $main-color;
+    font-family: $list-text;
+    font-weight: bold;
+}
+.container-prices-fluid {
+    min-width: rem(320);
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+.container-prices {
+    max-width: rem(290);
+    margin: 0 auto;
+}
+.container-main--bgd {
+    background-image: url('../img/podlogka_shum-min.png');
+    background-repeat: repeat;
+}
+
+// --------section prices------------ 
+
+.prices {
+    padding-top: rem(58); 
+    text-align: center;
+}
+.section-caption-white {
+    padding: 0;
+    color: #ffffff;
+    font-family: $font-caption;
+    font-size: rem(23);
+    text-transform: uppercase;
+    font-weight: bold;
+    &:first-letter {
+        color: $main-color;
+    }
+    &::after {
+        border-bottom: rem(4) solid #ffffff;
+        content: "";
+        width: rem(152);
+        display: block;
+        margin: 0 auto;
+        padding-bottom: rem(15);
+        margin-bottom: rem(19);
+    }
+}
+.prices-header__subtitle {
+    color: #ffffff;
+    font-size: rem(14);
+    font-family: $font-caption;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.prices-header-guarantee {
+    margin-top: rem(55);
+    padding: 0;
+    text-align: start;
+    line-height: 1.714;
+    margin-bottom: rem(30);
+    &__subtitle--first {
+        text-transform: uppercase;
+        font-size: rem(14);
+    }
+    &__subtitle--second {
+        color: #ffffff;
+        font-family: $list-text;
+        text-transform: uppercase;
+        font-size: rem(14);
+    }
+    &__text {
+        color: #eaeaeb;
+        font-family: $list-text;
+        font-size: rem(14);
+        padding-right: rem(10);
+    }
+}
+.prices-header-duration{
+    width: 100%;
+    height: rem(65);
+    background-color:  rgb(60, 60, 60);
+    box-shadow: 0px 20px 36px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: rem(20);
+    &__title {
+        color: #ffffff;
+        font-size: rem(16);
+        font-family: $font-caption;
+        font-weight: 900;
+        padding-top: rem(25);
+    }
+}
+.prices-fullstack {
+    margin-bottom: rem(45);
+}
+.list-fullstack{
+    background-color: rgb(49, 49, 51);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    &__development {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: $list-text;
+        font-size: rem(14);
+        font-weight: bold;
+    }
+}
+.list-fullstack-header {
+    width: 100%;
+    height: rem(84);
+    background-color: rgb(60, 60, 60);
+    margin-bottom: rem(40);
+    &__title {
+        color: #ffffff;
+        font-family: $list-text;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: rem(16);
+        padding-top: rem(27);
+        padding-bottom: rem(8);
+    }
+    &__subtitle {
+        font-family: $list-text;
+        font-weight: bold;
+        font-size: rem(16);
+        text-transform: uppercase;
+    }
+}
+.list-fullstack-info {
+    font-family: $list-text;
+    font-size: rem(14);
+    line-height: 1.714;
+    margin-bottom: rem(30);
+    &__techskills {
+        font-weight: bold;
+    }
+    &__skills {
+        color: #eaeaeb;
+    }
+}
+.list-fullstack-caption {
+    margin-bottom: rem(13);
+    &__finalproject {
+        font-family: $list-text;
+        font-size: rem(14);
+        text-transform: uppercase;
+    }
+    &__dash {
+        color: #ffffff;
+        font-size: rem(14);
+    }
+}
+.list-fullstack-bgd {
+    position: relative;
+    width: auto;
+    border: rem(1) solid #eaeaeb;
+    margin-top: rem(30);
+    margin-bottom: rem(35);
+    margin-left: rem(65);
+    margin-right: rem(68);
+    padding-top: rem(15);
+    padding-bottom: rem(15);
+    &__title {
+        color: #ffffff;
+        font-family: $list-text;
+        font-size: rem(14);
+        text-transform: uppercase;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        border-bottom: rem(3) solid $backgrond-list;
+        top: rem(43);
+        left: rem(90);
+        width: rem(70);
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        border-bottom: rem(3) solid $backgrond-list;
+        top: rem(-2);
+        left: rem(25);
+        width: rem(45);
+    }
+}
+.list-fullstack-career {
+    margin-bottom: rem(30);
+    &__item {
+        display: inline-block;
+        width: 90%;
+        height: rem(65);
+        color: #eaeaeb;
+        font-family: $semi-font;
+        text-align: start;
+        font-size: rem(14);
+        background-color: rgb(43, 43, 45);
+        line-height: 1.2;
+        box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
+        margin-bottom: rem(10);
+        padding-left: rem(18);
+    }
+}
+.list-fullstack-career__text--vebinar, .list-fullstack-career__text--skype {
+    padding-top: rem(26);
+}
+.list-fullstack-career__text--base, .list-fullstack-career__text--linkedin {
+    padding-top: rem(18);
+}
+.list-fullstack__price {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: rem(20);
+    font-family: $font-caption;
+    font-size: rem(36);
+    font-weight: 900;
+}
+.list-fullstack__price--online {
+    color: #ffc600;
+}
+.list-fullstack__btn, .graduate-skills-articles__btn {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(to right, rgba(255,179,27,1) 0%, rgba(251,27,60,1) 100%);
+    padding: 15px 0;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.21);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: rem(16);
+    font-weight: bold;
+    cursor: pointer;
+}
+.list-fullstack__btn {
+    margin-bottom: rem(40);
+}
+.prices-online {
+    margin-bottom: rem(20);
+}
+.list-fullstack-header__kiev{
+    font-family: $list-text;
+    font-size: rem(16);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.list-fullstack__price--offline {
+    color: #5cc497;
+}
+.payment-box__title {
+    font-family: $list-text;
+    font-size: rem(14);
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: rem(60);
+    padding-right: rem(60);
+    margin-bottom: rem(25);
+}
+.payment-list {
+    margin-bottom: rem(60);
+}
+.payment-list__svg {
+    display: inline-block;
+    width: 100%;
+    fill: $main-color;
+    margin-bottom: rem(15);
+    margin-top: rem(20);
+}
+.payment-list__item {
+    display: inline-block;
+    width: 100%;
+    height: rem(115);
+    background-color: rgb(42, 41, 44);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    border-bottom: rem(2) solid #403f42;
+    padding-bottom: rem(25);
+    position: relative;
+}
+.payment-list__text {
+    color: #eaeaeb;
+    font-family: $semi-font;
+    font-size: rem(16);
+}
+.payment-list__svg--rich {
+    position: absolute;
+    right: rem(0);
+}
+.payment-list__svg--stopwatch {
+    position: absolute;
+    top: rem(27);
+    left: rem(120);
+    fill: #ffffff;
+}
+.payment-list__text--absolute {
+    position: absolute;
+    top: rem(75);
+    right: rem(115);
+}
+.payment-list__item--border {
+    border-bottom: none;
+}
+
+// --------section cource-difference----------
+
+.course-difference {
+    color: $color-caption-white_page;
+}
+.course-difference__title {
+    padding-top: rem(60);
+    margin-bottom: rem(58);
+    font-family: $font-caption;
+    font-size: rem(25);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.2;
+    &:first-letter {
+        color: $main-color;
+    }
+}
+.course-difference-list__title {
+    font-family: $semi-font;
+    font-size: rem(19);
+    font-weight: bold;
+    line-height: 1.2;
+    &::after {
+        border-bottom: rem(3) solid $main-color;
+        content: "";
+        width: rem(80);
+        display: block;
+        padding-top: rem(7);
+        margin-bottom: rem(20);
+    }
+}
+.course-difference-list__text {
+    font-family: $list-text;
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: 1.714;
+    padding-right: rem(30);
+    margin-bottom: rem(28);
+}
+.course-difference-list-span {
+    margin-right: rem(20);
+    
+}
+.course-difference-list-span__text {
+    font-family: $list-text;
+    font-size: rem(14);
+    line-height: 1.714;
+    font-weight: 500;
+}
+.course-difference-list-education__item {
+    display: flex;
+    margin-bottom: rem(18);
+    padding-right: rem(25);
+}
+.course-difference-list-education__svg {
+    margin-right: rem(20);
+    margin-top: rem(2);
+}
+.course-difference-article {
+    border-top: rem(3) solid $color-caption-white_page;
+    &__title {
+        font-family: $list-text;
+        font-size: rem(14);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.714;
+        padding-top: rem(10);
+        margin-right: rem(20);
+        margin-bottom: rem(20);
+        padding-right: rem(40);
+    }
+    &__text {
+        font-family: $list-text;
+        font-size: rem(14);
+        line-height: 1.714;
+        font-weight: 500;
+        padding-right: rem(50);
+    }
+    &__thumbnail {
+        font-family: $list-text;
+        font-size: rem(14);
+        font-weight: bold;
+        line-height: 1.714;
+        margin-bottom: rem(55);
+    }
+}
+
+// ----------section graduate-skiils--------------
+
+
+.graduate-skills {
+    position: relative;
+    margin-bottom: rem(40);
+    &::before{
+        background-image: url('../img/1125-min.png');
+        background-repeat: repeat;
+        content: "";
+        width: rem(767);
+        height: rem(1560);
+        display: block;
+        position: absolute;
+        left: rem(-225);
+        top: 0;
+        z-index: -1;
+    }
+    &__title {
+        font-family: $font-caption;
+        font-size: rem(25);
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        line-height: 1.2;
+        padding-top: rem(55);
+        margin-bottom: rem(40);
+        &:first-letter {
+            color: $main-color;
+        }
+    }
+}
+.graduate-skills-image {
+    background-image: url('../img/code_1-min.png');
+    width: 100%;
+    height: rem(300);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+.graduate-skills-box {
+    background-color: #fafafa;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+.graduate-skills-article-box::before {
+    border-bottom: rem(3) solid $main-color;
+    content: "";
+    width: rem(250);
+    display: block;
+    padding-bottom: rem(50);
+    margin-left: rem(20);
+}
+.graduate-skills-article-box__title {
+    text-align: center;
+    font-family: $list-text;
+    font-size: rem(16);
+    font-weight: bold;
+    line-height: 1.5;
+    padding-top: rem(18);
+    padding-left: rem(40);
+    padding-right: rem(38);
+    margin-bottom: rem(30);
+}
+.graduate-skills-article-box__span {
+    font-weight: 500;
+}
+.graduate-skills-article-list__item {
+    display: flex;
+    margin-bottom: rem(15);
+    padding-right: rem(30);
+}
+.graduate-skills-article-list__svg {
+    margin-left: rem(20);
+    margin-right: rem(10);
+    margin-top: rem(2);
+}
+.graduate-skills-article-list__thumbnail {
+    font-family: $list-text;
+    font-size: rem(14);
+    font-weight: bold;
+    line-height: 1.429;
+}
+.graduate-skills-article-list__text {
+    font-family: $list-text;
+    font-size: rem(14);
+    line-height: 1.429;
+}
+.graduate-skills-article-box__title--second {
+    text-align: center;
+    font-family: $list-text;
+    font-size: rem(16);
+    font-weight: bold;
+    line-height: 1.5;
+    padding: rem(25);
+}
+.graduate-skills-article__text {
+    font-family: $list-text;
+    font-size: rem(14);
+    padding-left: rem(25);
+    padding-right: rem(40);
+    line-height: 1.714;
+    margin-bottom: rem(40);
+}
+.course-certificate-bgd {
+    border: rem(3) solid $color-caption-white_page;
+    margin-left: rem(20);
+    margin-right: rem(20);
+    margin-bottom: rem(30);
+}
+.course-certificate-bgd__text {
+    font-family: $list-text;
+    font-size: rem(14);
+    line-height: 1.714;
+    text-align: center;
+    padding-left: rem(27);
+    padding-right: rem(27);
+    padding-top: rem(15);
+    padding-bottom: rem(15);
+}
+.course-certificate-bgd__thumbnail {
+    font-weight: bold;
+}
+.graduate-skills-articles__btn {
+    margin-left: rem(25);
+    margin-bottom: rem(45);
+    font-size: rem(14);
+}
+
+// -----------section faq----------------------
+
+.faq-box {
+    padding-left: 0;
+    padding-right: 0;
+}
+.faq-box__title {
+    margin-bottom: rem(20);
+    font-size: rem(24);
+    font-family: $font-caption;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.2;
+    padding-top: rem(55);
+        &:first-letter {
+            color: $main-color;
+        }
+    &::after {
+        border-bottom: rem(3) solid $color-caption-white_page;
+        content: "";
+        width: rem(150);
+        display: block;
+        margin-left: rem(67);
+        padding-top: rem(10);
+    }
+}
+.faq-box__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: rem(14);
+    text-transform: uppercase;
+    line-height: 1.429;
+    display: inline-block;
+}
+.faq-box__subtitle--first {
+    margin-left: rem(57);
+}
+.faq-box__subtitle--second {
+    margin-bottom: rem(40);
+    margin-left: rem(70);
+}
+.faq-box-list {
+    margin-bottom: rem(5)
+}
+.faq-box-list__text, input[type="checkbox"] {
+    display: none;
+}
+.faq-box-list__plus {
+    display: none;
+}
+input[type="checkbox"]:checked ~ .faq-box-list__text {
+    display: block;
+    background-color: #ffffff;
+}
+.faq-box-list__pseudobtn {
+    display: inline-block;
+    width: 100%;
+    height: rem(80);
+    background-color: rgb(237, 237, 237);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
+    margin-top: rem(10);
+    cursor: pointer;
+    font-family: $list-text;
+    font-size: rem(14);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.714;
+    padding-top: rem(30);
+    padding-left: rem(15);
+}
+.faq-box-list__text {
+    width: 100%;
+    height: rem(125);
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
+    font-family: $list-text;
+    font-size: rem(14);
+    line-height: 1.714;
+    padding-left: rem(12);
+    padding-top: rem(28);
+    padding-right: rem(40);
+}
+.faq-box-list__pseudobtn--last {
+    padding-top: rem(20);
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1199px) {
+
+
+    // -------------variables-------------
+    
+    .container-prices-fluid {
+            min-width: rem(768);
+            margin: 0 auto;
+            overflow: hidden;
+        }
+    .container-prices {
+            max-width: rem(690);
+            margin: 0 auto;
+        }
+    
+    .container-main--bgd {
+        background-image: url('../img/podlogka_shum-min.png');
+        background-repeat: repeat;
+    }
+    
+    // --------section prices------------
+    
+    .prices-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prices-header__title {
+        font-size: rem(30);
+        line-height: 1.333;
+        font-weight: bold;
+        margin-bottom: rem(40);
+        &::after {
+            display: none;
+        }
+    }
+    .prices-header__subtitle {
+        margin-left: rem(135);
+        line-height: 2.143;
+        display: inline-block;
+        position: relative;
+        &::after {
+            border-bottom: rem(2) solid #ffffff;
+            content: "";
+            width: rem(322);
+            display: block;
+            position: absolute;
+            right: rem(76);
+        }
+    }
+    .prices-fullstack {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-fullstack {
+        flex-basis: 48%;
+        &__btn {
+            font-size: rem(16);
+        }
+    }
+    .list-fullstack-bgd {
+        border: rem(2) solid #eaeaeb;
+        &::after {
+            border-bottom: rem(4) solid $backgrond-list;
+            left: rem(110);
+        }
+        &::before {
+            border-bottom: rem(4) solid $backgrond-list;
+            top: rem(-3);
+        }
+    }
+    .prices-online {
+        margin-bottom: 0;
+    }
+    .payment-list {
+        display: flex;
+        width: 100%;
+        &__item {
+            border-bottom: none;
+            border-right: rem(2) solid #403f42;
+        }
+        &__item--border {
+            border-right: none;
+        }
+    }
+    .payment-list__svg--stopwatch {
+        top: rem(19);
+        left: rem(72);
+    }
+    .payment-list__text--absolute {
+        top: rem(84);
+        right: rem(80);
+    }
+
+    
+    // --------section cource-difference----------
+    
+    .course-difference {
+        background-color: #fafafa;
+        box-shadow: 0px 22px 20px 0px rgba(0, 0, 0, 0.12);
+        position: relative;
+        z-index: 15;
+        margin-bottom: rem(80);
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            left: rem(-20);
+            top: rem(440);
+            width: rem(575);
+            height: rem(555);
+            border-bottom: rem(20) solid $main-color;
+            border-left: rem(20) solid $main-color;
+            background-color: #fafafa;
+            z-index: -1;
+        }
+    }
+    .course-difference__title {
+        font-size: rem(30);
+        padding-left: rem(80);
+        padding-right: rem(80);
+        line-height: 1.333;
+    }
+    .course-difference-list {
+        margin-left: rem(27);
+        &__text {
+            padding-right: rem(115);
+        }
+    }
+    .course-difference-article {
+        border: rem(4) solid #242427;
+        margin-left: rem(27);
+        margin-right: rem(27);
+        padding-left: rem(22);
+        padding-top: rem(35);
+        margin-bottom: rem(60);
+        position: relative;
+        &__title {
+            font-size: rem(16);
+            font-weight: bolder;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            border-bottom: rem(6) solid #fafafa;
+            top: rem(218);
+            left: rem(412);
+            width: rem(146);
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            border-bottom: rem(6) solid #fafafa;
+            top: rem(-5);
+            left: rem(40);
+            width: rem(275);
+        }
+    }
+    .course-difference-list__text--first {
+        padding-right: rem(120);
+    }
+    .course-difference-article__thumbnail {
+        margin-bottom: 0;
+        padding-bottom: rem(35);
+    }
+    
+    // ----------section graduate-skiils--------------
+    
+    .graduate-skills-image {
+        background-image: url('../img/code_2-min.png');
+        height: rem(180);   
+    }
+    .graduate-skills {
+        position: relative;
+        z-index: 2;
+        margin-bottom: rem(80);
+        &::after {
+            width: rem(768);
+            height: rem(125);
+            background-image: url('../img/39-min.png');
+            background-position: bottom;
+            display: block;
+            content: "";
+            position: absolute;
+            left: rem(-39);
+            bottom: rem(-65);
+            z-index: -1;
+        }
+        &::before {
+            background-image: none;
+            display: none;
+        }  
+    }
+    .bgd-graduate-skills {
+        position: absolute;
+        background-image: url('../img/1329-min.png');
+        background-repeat: no-repeat;
+        width: rem(1200);
+        height: rem(1480);
+        right: rem(-260);
+        top: rem(-450);
+        z-index: -1;
+    }
+    .graduate-skills__title {
+        padding: 0;
+        font-size: rem(30);
+        line-height: 1.333;
+        font-family: $font-caption;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: rem(60);
+        &:first-letter {
+            color: $main-color;
+        }
+    }
+    .graduate-skills-article-box::before {
+        border-bottom: rem(3) solid $main-color;
+        content: "";
+        width: rem(555);
+        display: block;
+        margin-left: rem(50);
+    }
+    .graduate-skills-article-box__title {
+        text-align: left;
+        padding-left: rem(50);
+        padding-right: rem(200);
+    }
+    
+    .graduate-skills-article-box__title--second {
+        text-align: left;
+        padding-left: rem(50);
+        padding-right: rem(340);
+    }
+    .graduate-skills-article__text {
+        padding-left: rem(50);
+        &::after {
+            border-bottom: rem(2) solid $main-color;
+            content: "";
+            width: rem(175);
+            display: block;
+            margin-left: rem(150);
+        }
+    }
+    .course-certificate-bgd {
+        position: relative;
+        margin-left: rem(117);
+        margin-right: rem(117);
+        padding-left: rem(65);
+        padding-right: rem(65);
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            border-bottom: rem(6) solid #fafafa;
+            top: rem(136);
+            left: rem(340);
+            width: rem(90);
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            border-top: rem(6) solid #fafafa;
+            top: rem(-4);
+            left: rem(90);
+            width: rem(155);
+        }
+        &__text {
+            font-size: rem(16);
+        }
+    }
+    .course-certificate-bgd__text::before {
+        border-left: rem(6) solid #fafafa;
+        position: absolute;
+        content: "";
+        display: block;
+        height: rem(53);
+        left: rem(-5);
+    }
+    .graduate-skills-articles__btn {
+        height: rem(56);
+        font-size: rem(14);
+        margin-left: rem(185);
+    }
+    .graduate-skills-box {
+        box-shadow: inherit;
+    }
+    .graduate-skills-article-list__item {
+        padding-right: rem(185);
+    }
+
+    // -----------section faq----------------------
+
+    .faq {
+        position: relative;
+    }
+    .faq-bgd {
+        display: block;
+        width: rem(293);
+        height: rem(578);
+        position: absolute;
+        background-image: url('../img/question-min.png');
+        background-repeat: no-repeat;
+        right: 0;
+        top: rem(-35);
+        z-index: -5;
+    }
+    .faq-image {
+        display: block;
+        width: rem(482);
+        height: rem(304);
+        position: absolute;
+        background-image: url('../img/faq-min.png');
+        background-repeat: no-repeat;
+        right: rem(-35);
+        top: rem(25);
+        z-index: -2;
+    }
+    .faq-box__title {
+        padding: 0;
+        font-size: rem(29);
+        line-height: 1.333;
+        font-family: $font-caption;
+        text-transform: uppercase;
+        font-weight: 900;
+        &:first-letter {
+            color: $main-color;
+        }
+        &::after {
+            border-bottom: none;
+        }
+    }
+    .faq-box__subtitle {
+        font-weight: bold;
+    }
+    .faq-box__subtitle--first {
+        margin-left: rem(10);
+        padding-left: rem(149); 
+        border-bottom: rem(3) solid $color-caption-white_page;
+        width: rem(313);    
+    }
+    .faq-box__subtitle--second {
+        margin-left: rem(185);
+        margin-bottom: rem(125);
+    }
+    .faq-box-list__item {
+        position: relative;
+    }
+}
+  
+    // Desktop
+    @media (min-width: 1200px) {
+    
+    // -------------variables-------------
+    
+    .container-prices-fluid {
+        max-width: rem(1920);
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .container-prices {
+        min-width: rem(1146);
+        width: rem(1146);
+        margin: 0 auto;
+    }
+    .container-main--bgd {
+        background-repeat: repeat;
+    } 
+
+    // --------section prices------------
+    
+    .prices {
+        padding-top: rem(275);
+        position: relative;
+        z-index: 5;
+    }
+    .prices-online::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: rem(320);
+        height: rem(500);
+        background-image: url('../img/4-min.png');
+        background-repeat: no-repeat;
+        top: 0;
+        left: rem(-320);
+    }
+    .prices-offline {
+        z-index: 5;
+    }
+    .prices-offline::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: rem(420);
+        height: rem(500);
+        background-image: url('../img/1224-min.png');
+        background-repeat: no-repeat;
+        top: rem(410);
+        right: rem(-285);
+        z-index: -1;
+    } 
+    .prices-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-caption-white {
+        font-size: rem(42);
+        line-height: 1.19;
+        font-weight: bold;
+        margin-bottom: rem(55);
+        &::after {
+            display: none;
+        }
+    }
+    .prices-header__subtitle {
+        margin-left: rem(200);
+        line-height: 1.667;
+        display: inline-block;
+        position: relative;
+        font-size: rem(18);
+        &::after {
+            border-bottom: rem(2) solid #ffffff;
+            content: "";
+            width: rem(470);
+            display: block;
+            position: absolute;
+            right: rem(152);
+        }
+    }
+    .prices-header-guarantee__subtitle--first, .prices-header-guarantee__subtitle--second, .prices-header-guarantee__text, .prices-header-duration__title,
+    .list-fullstack-info, .list-fullstack__development, .list-fullstack-caption__finalproject, .payment-box__title {
+        font-size: rem(18);
+    }
+    .prices-fullstack {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-fullstack {
+        flex-basis: 48%;
+        &__btn {
+            font-size: rem(18);
+        }
+    }
+    .list-fullstack-header-bgd, .prices-offline {
+        background: none;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+    .prices-offline-dekstop-bgd {
+        background-color: $backgrond-list;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    }
+    .list-fullstack-info-offline {
+        padding-top: rem(40);
+    }
+    .list-fullstack-header__title, .list-fullstack-header__subtitle, .list-fullstack-header__kiev {
+        font-size: rem(22);
+        line-height: 1.182;
+    }
+    .list-fullstack-header {
+        padding-bottom: rem(120);
+    }
+    .list-fullstack-bgd {
+        margin-left: rem(190);
+        margin-right: rem(200);
+        &::after {
+            left: rem(75);
+        }
+        &__title {
+            font-size: rem(14)
+;        }
+    }
+    .list-fullstack-info__skills {
+        color: #b5b5b5;
+    }
+    .list-fullstack-career__item {
+        position: relative;
+        font-weight: normal;
+        font-size: rem(16);
+        padding-left: rem(50);
+        color: #b5b5b5;
+        z-index: 5;
+        &::after {
+            border-top: rem(1) solid $main-color;
+            content: "";
+            width: rem(60);
+            display: block;
+            position: absolute;
+            top: rem(33);
+            left: rem(-40);
+        }
+    }
+    .list-fullstack-career__text--base {
+        padding-right: rem(140);
+        padding-top: rem(15);
+    }
+    .list-fullstack-career__text--linkedin, .list-fullstack-career__text--vebinar, .list-fullstack-career__text--skype {
+        padding-top: rem(23);
+    }
+    .list-fullstack__price {
+        font-size: rem(50);
+    }
+    .payment-list {
+        display: flex;
+        width: 100%;
+        &__item {
+            border-bottom: none;
+            border-right: rem(2) solid #403f42;
+        }
+        &__item--border {
+            border-right: none;
+        }
+    }
+    .payment-list {
+        margin-bottom: rem(110);
+    }
+    .payment-list__item {
+        display: flex;
+        align-items: center;
+    }
+    .payment-list__svg {
+        flex-basis: 35%;
+        margin: 0;
+    }
+    .payment-list__svg--stopwatch {
+        top: rem(28);
+        left: rem(45);
+    }
+    .payment-list__text--absolute {
+        top: rem(30);
+        right: rem(85);
+    }
+    .payment-list__svg--rich {
+        top: rem(28);
+        left: rem(-100);
+    }
+    .payment-list__text {
+        font-size: rem(26);
+        font-weight: normal;
+    }
+
+    // --------section cource-difference----------
+    
+    .course-difference {
+        background-color: #fafafa;
+        box-shadow: 0px 22px 20px 0px rgba(0, 0, 0, 0.12);
+        position: relative;
+        z-index: 15;
+        margin-bottom: rem(100);
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            left: rem(-40);
+            bottom: rem(-40);
+            width: rem(575);
+            height: rem(565);
+            border-bottom: rem(40) solid $main-color;
+            border-left: rem(40) solid $main-color;
+            background-color: #fafafa;
+            z-index: -1; 
+        }
+        &__title {
+            padding-top: rem(140);
+            font-size: rem(42);
+            padding-left: rem(200);
+            padding-right: rem(200);
+        }
+    }
+    .course-difference-list {
+        padding-left: rem(100);
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: rem(-230);
+            top: rem(-180);
+            width: rem(227);
+            height: rem(960);
+            background-image: url('../img/3-min.png');
+            background-repeat: no-repeat;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            right: rem(-65);
+            top: rem(-240);
+            width: rem(65);
+            height: rem(570);
+            background-color: $main-color;
+            box-shadow: 0px 48px 35px 0px rgba(0, 0, 0, 0.1);
+        }
+        &__title {
+            font-size: rem(30);
+        }
+        &__text {
+            font-size: rem(18);
+            padding-right: rem(360);
+        }
+    }
+    .course-difference-list__title::after {
+        width: rem(120);
+    }
+    .course-difference-list-span__text {
+        font-size: rem(18);
+    }
+    .course-difference-article {
+        border: rem(4) solid #242427;
+        margin-left: rem(230);
+        margin-right: rem(65);
+        padding-left: rem(55);
+        padding-right: rem(70);
+        padding-top: rem(35);
+        margin-bottom: rem(90);
+        position: relative;
+        &__title, &__text, &__thumbnail {
+            font-size: rem(18);
+            line-height: 1.444;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            border-bottom: rem(10) solid #fafafa;
+            top: rem(240);
+            left: rem(500);
+            width: rem(200);
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            border-bottom: rem(10) solid #fafafa;
+            top: rem(-6);
+            left: rem(40);
+            width: rem(375);  
+        }
+    }
+
+    // ----------section graduate-skiils--------------
+    
+    .graduate-skills-image {
+        width: 100%;
+        background-image: url('../img/code_3-min.png');
+        background-repeat: no-repeat;
+        height: rem(915);
+    }
+    .graduate-skills {
+        position: relative;
+        z-index: 2;
+        &::before {
+            background-image: none;
+            display: none;
+        }
+    }
+    .bgd-graduate-skills {
+        position: absolute;
+        background-image: url('../img/1329-min.png');
+        background-repeat: no-repeat;
+        width: rem(1920);
+        height: rem(1410);
+        right: rem(-387);
+        top: rem(-500);
+        z-index: -2;
+    }
+    .graduate-skills-boxes {
+        display: flex;
+    }
+    .graduate-skills-box {
+        position: relative;
+        &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: rem(475);
+        height: rem(970);
+        background-image: url('../img/1272-min.png');
+        background-repeat: no-repeat;
+        top: rem(-130);
+        right: rem(-250);
+        z-index: -1;
+        }
+    }
+    .graduate-skills__title {
+        font-size: rem(42);
+        font-family: $font-caption;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: rem(85);
+        &:first-letter {
+            color: $main-color;
+        }
+    }
+    .graduate-skills-article-box {
+        margin-bottom: rem(0);
+        &::before {
+            width: rem(555);
+            margin-left: rem(-150);
+        }
+    }
+    .graduate-skills-article-box__title {
+        font-size: rem(22);
+        text-align: left;
+        padding-right: rem(146);
+        padding-left: rem(46.5);
+    }
+    .graduate-skills-article-list__thumbnail, .graduate-skills-article-list__text {
+        font-size: rem(18);
+    }
+    .graduate-skills-article-box__title--second {
+        font-size: rem(22);
+        text-align: left;
+        padding-left: rem(46);
+        padding-right: rem(120);
+    }
+    .graduate-skills-article__text {
+        font-size: rem(18);
+        padding-left: rem(46);
+    }
+    .course-certificate-bgd {
+        position: relative;
+        margin-left: rem(46);
+        margin-right: rem(46);
+        padding-left: rem(85);
+        padding-right: rem(85);
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            border-bottom: rem(5) solid #fafafa;
+            top: rem(98);
+            left: rem(340);
+            width: rem(90);
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            border-top: rem(5) solid #fafafa;
+            top: rem(-4);
+            left: rem(115);
+            width: rem(155);
+        }
+    }
+    .course-certificate-bgd__text::before {
+        border-left: rem(5) solid #fafafa;
+        position: absolute;
+        content: "";
+        display: block;
+        height: rem(53);
+        left: rem(-4);
+    }
+    .graduate-skills-articles__btn {
+        font-size: rem(16);
+        margin-left: rem(150);
+        height: rem(65);
+        margin-bottom: 0;
+    }
+    .graduate-skills-article-list__item {
+        padding-right: 0;
+    }
+
+    // -----------section faq----------------------
+
+    .faq {
+        position: relative;
+        padding-top: rem(65);
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: rem(1495);
+            height: rem(1397);
+            background-image: url('../img/pattern-min.png');
+            background-repeat: no-repeat;
+            top: rem(-240);
+            right: rem(-420);
+            z-index: -5;
+        }
+    }
+    .faq-bgd {
+        width: rem(365);
+        height: rem(700);
+        position: absolute;
+        background-image: url('../img/question-dekstop-min.png');
+        background-repeat: no-repeat;
+        right: rem(50);
+        top: rem(65);
+        z-index: -5;
+    }
+    .faq-image {
+        width: rem(649);
+        height: rem(394);
+        position: absolute;
+        background-image: url('../img/faq2-min.png');
+        background-repeat: no-repeat;
+        right: rem(-40);
+        top: rem(230);
+        z-index: 2;
+        
+    }
+    .faq-box__title {
+        font-size: rem(42);
+        text-align: left;
+        padding-right: rem(125);
+        padding-top: 0;
+        font-family: $font-caption;
+        text-transform: uppercase;
+        font-weight: 900;
+        &:first-letter {
+            color: $main-color;
+        }
+    }
+    .faq-box__title::after {
+        border-bottom: none;
+    }
+    .faq-box__subtitle {
+        font-size: rem(18);
+        font-weight: bold;
+    }
+    .faq-box__subtitle--first {
+        margin-left: rem(0);
+        padding-left: rem(249); 
+        border-bottom: rem(3) solid $color-caption-white_page;
+        width: rem(460);    
+    }
+    .faq-box__subtitle--second {
+        margin-left: rem(282);
+        margin-bottom: rem(120);
+    }
+    .faq-box-list {
+        padding: 0;
+        z-index: 5;
+    }
+}

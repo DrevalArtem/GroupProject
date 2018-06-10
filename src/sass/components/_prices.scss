@@ -1,11 +1,6 @@
 
 // -------------variables-------------
 
-.col-12-prices, .col-sm-12-prices {
-    padding-right: 0;
-    padding-left: 0;
-}
-
 .subtitle-text-deco {
     color: $main-color;
     font-family: $list-text;
@@ -15,15 +10,19 @@
     min-width: rem(320);
     margin: 0 auto;
     padding: 0;
+    overflow: hidden;
 }
 .container-prices {
-    min-width: rem(290);
-    width: rem(290);
+    max-width: rem(290);
     margin: 0 auto;
 }
 .container-main--bgd {
     background-image: url('../img/podlogka_shum-min.png');
     background-repeat: repeat;
+}
+.prices-header-duration, .prices-header, .prices-fullstack, .list-fullstack, .payment-box, .graduate-skills-boxes, .graduate-skills-box, .payment-background {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 // --------section prices------------ 
@@ -177,7 +176,7 @@
         display: block;
         border-bottom: rem(3) solid $backgrond-list;
         top: rem(43);
-        left: rem(73);
+        left: rem(75);
         width: rem(70);
     }
     &::before {
@@ -186,7 +185,7 @@
         display: block;
         border-bottom: rem(3) solid $backgrond-list;
         top: rem(-2);
-        left: rem(17);
+        left: rem(25);
         width: rem(45);
     }
 }
@@ -302,7 +301,7 @@
 .payment-list__text--absolute {
     position: absolute;
     top: rem(75);
-    right: rem(100);
+    right: rem(103);
 }
 .payment-list__item--border {
     border-bottom: none;
@@ -331,6 +330,7 @@
     font-size: rem(19);
     font-weight: bold;
     line-height: 1.2;
+    padding-right: rem(20);
     &::after {
         border-bottom: rem(3) solid $main-color;
         content: "";
@@ -345,8 +345,11 @@
     font-size: rem(14);
     font-weight: 500;
     line-height: 1.714;
-    padding-right: rem(20);
+    padding-right: rem(10);
     margin-bottom: rem(28);
+}
+.course-difference-list__text--first {
+    padding-right: rem(30);
 }
 .course-difference-list-span {
     margin-right: rem(20);
@@ -361,6 +364,7 @@
 .course-difference-list-education__item {
     display: flex;
     margin-bottom: rem(18);
+    padding-right: rem(0);
 }
 .course-difference-list-education__svg {
     margin-right: rem(20);
@@ -375,9 +379,8 @@
         text-transform: uppercase;
         line-height: 1.714;
         padding-top: rem(10);
-        margin-right: rem(20);
         margin-bottom: rem(20);
-        padding-right: rem(20);
+        padding-right: rem(40);
     }
     &__text {
         font-family: $list-text;
@@ -405,11 +408,11 @@
         background-image: url('../img/1125-min.png');
         background-repeat: repeat;
         content: "";
-        width: rem(320);
-        height: rem(1510);
+        width: rem(767);
+        height: rem(1560);
         display: block;
         position: absolute;
-        left: rem(-15);
+        left: rem(-225);
         top: 0;
         z-index: -1;
     }
@@ -486,7 +489,7 @@
     font-size: rem(16);
     font-weight: bold;
     line-height: 1.5;
-    padding: rem(15);
+    padding: rem(20);
 }
 .graduate-skills-article__text {
     font-family: $list-text;
@@ -507,8 +510,8 @@
     font-size: rem(14);
     line-height: 1.714;
     text-align: center;
-    padding-left: rem(20);
-    padding-right: rem(20);
+    padding-left: rem(27);
+    padding-right: rem(27);
     padding-top: rem(15);
     padding-bottom: rem(15);
 }
@@ -563,7 +566,7 @@
     margin-left: rem(70);
 }
 .faq-box-list {
-    margin-bottom: rem(85)
+    margin-bottom: rem(5)
 }
 .faq-box-list__text, input[type="checkbox"] {
     display: none;
@@ -616,10 +619,10 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     .container-prices-fluid {
             min-width: rem(768);
             margin: 0 auto;
+            overflow: hidden;
         }
     .container-prices {
-            min-width: rem(690);
-            width: rem(690);
+            max-width: rem(690);
             margin: 0 auto;
         }
     
@@ -676,6 +679,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         }
         &::before {
             border-bottom: rem(4) solid $backgrond-list;
+            top: rem(-3);
         }
     }
     .prices-online {
@@ -726,12 +730,15 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .course-difference__title {
         font-size: rem(30);
-        padding-left: rem(70);
-        padding-right: rem(70);
+        padding-left: rem(80);
+        padding-right: rem(80);
         line-height: 1.333;
     }
     .course-difference-list {
         margin-left: rem(27);
+        &__text {
+            padding-right: rem(115);
+        }
     }
     .course-difference-article {
         border: rem(4) solid #242427;
@@ -764,6 +771,9 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             width: rem(275);
         }
     }
+    .course-difference-list__text--first {
+        padding-right: rem(120);
+    }
     .course-difference-article__thumbnail {
         margin-bottom: 0;
         padding-bottom: rem(35);
@@ -777,8 +787,8 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .graduate-skills {
         position: relative;
-        z-index: 2;
-        margin-bottom: rem(80);
+        z-index: -10;
+        
         &::after {
             width: rem(768);
             height: rem(125);
@@ -788,7 +798,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             content: "";
             position: absolute;
             left: rem(-39);
-            bottom: rem(-65);
+            bottom: rem(-35);
             z-index: -1;
         }
         &::before {
@@ -798,11 +808,11 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .bgd-graduate-skills {
         position: absolute;
-        background-image: url('../img/1328-min.png');
+        background-image: url('../img/1329-min.png');
         background-repeat: no-repeat;
-        width: rem(768);
+        width: rem(1200);
         height: rem(1480);
-        right: rem(-39);
+        right: rem(-260);
         top: rem(-450);
         z-index: -1;
     }
@@ -908,7 +918,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         background-image: url('../img/question-min.png');
         background-repeat: no-repeat;
         right: 0;
-        top: rem(-35);
+        top: rem(0);
         z-index: -5;
     }
     .faq-image {
@@ -918,8 +928,8 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         position: absolute;
         background-image: url('../img/faq-min.png');
         background-repeat: no-repeat;
-        right: rem(-35);
-        top: rem(25);
+        right: rem(-20);
+        top: rem(40);
         z-index: -2;
     }
     .faq-box__title {
@@ -951,30 +961,6 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .faq-box-list__item {
         position: relative;
-    }
-    .faq-box-list__plus {
-        display: block;
-        content: "";
-        width: rem(41);
-        height: rem(41);
-        &::after {
-            border-bottom: rem(1) solid $color-caption-white_page;
-            position: absolute;
-            width: rem(41);
-            display: block;
-            content: "";
-            top: rem(50);
-            right: rem(57);
-        }
-        &::before {
-            border-right: rem(1) solid $color-caption-white_page;
-            position: absolute;
-            height: rem(41);
-            display: block;
-            content: "";
-            top: rem(30);
-            right: rem(77);
-        }
     }
 }
   
@@ -1293,7 +1279,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         background-repeat: no-repeat;
         width: rem(1920);
         height: rem(1410);
-        right: rem(-387);
+        right: rem(-373);
         top: rem(-500);
         z-index: -2;
     }
@@ -1362,8 +1348,8 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             position: absolute;
             content: "";
             display: block;
-            border-bottom: rem(5) solid #fafafa;
-            top: rem(98);
+            border-bottom: rem(6) solid #fafafa;
+            top: rem(121);
             left: rem(340);
             width: rem(90);
         }
@@ -1400,6 +1386,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     .faq {
         position: relative;
         padding-top: rem(65);
+        margin-bottom: rem(100);
         &::after {
             position: absolute;
             display: block;
@@ -1410,7 +1397,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             background-repeat: no-repeat;
             top: rem(-240);
             right: rem(-420);
-            z-index: -5;
+            z-index: -1;
         }
     }
     .faq-bgd {

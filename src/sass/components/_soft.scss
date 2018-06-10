@@ -352,7 +352,7 @@ flex: 1;
   }
   &__title {
     position: relative;
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
     flex: 1;
@@ -546,6 +546,9 @@ flex: 1;
     &-item:nth-child(2n+1) {
       margin-right: 30px;
 
+    }
+    &-item__title{
+      font-size: 17px;
     }
   }
 

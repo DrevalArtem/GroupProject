@@ -1267,7 +1267,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .graduate-skills {
         position: relative;
-        z-index: 2;
+        margin-bottom: 0;
         &::before {
             background-image: none;
             display: none;
@@ -1278,9 +1278,9 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         background-image: url('../img/1329-min.png');
         background-repeat: no-repeat;
         width: rem(1920);
-        height: rem(1410);
+        height: rem(1460);
         right: rem(-373);
-        top: rem(-500);
+        top: rem(-470);
         z-index: -2;
     }
     .graduate-skills-boxes {
@@ -1395,7 +1395,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             height: rem(1397);
             background-image: url('../img/pattern-min.png');
             background-repeat: no-repeat;
-            top: rem(-240);
+            top: rem(-270);
             right: rem(-420);
             z-index: -1;
         }

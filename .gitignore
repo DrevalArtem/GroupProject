@@ -4,4 +4,8 @@ node_modules
 .DS_Store
 build
 package-lock.json
+<<<<<<< HEAD
 
+=======
+src/libs/.DS_Store
+>>>>>>> d7b24eda8361cd2fd7534ec02b391da6a8874f30

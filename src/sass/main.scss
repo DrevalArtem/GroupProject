@@ -4,6 +4,7 @@
 @import "fonts";
 @import "libs";
 @import "mixins";
+<<<<<<< HEAD
 
 @import "./components/_header.scss";
 // mobile
@@ -334,6 +335,14 @@
   line-height: 1.714;
   text-align: left;
 }
+=======
+@import "media";
+//@import "./components/_header.scss";
+@import "./components/_soft.scss";
+//@import "./components/_guarantee.scss";
+//@import "./components/_prices.scss";
+//@import "./components/_footer_section.scss";
+>>>>>>> d7b24eda8361cd2fd7534ec02b391da6a8874f30
 
 .changes-list__menu {
   padding-top: rem(40);

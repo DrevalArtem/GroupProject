@@ -3,6 +3,7 @@
 // }
 
 .bg-black {
+    min-width: rem(320);
     background-image: url('../img/background.png');
     margin: 0 auto;
 }
@@ -64,7 +65,7 @@
     font-size: rem(14);
     font-weight: 700;
     line-height: rem(20);
-    letter-spacing: rem(0.5);
+    letter-spacing: rem(0.2);
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
@@ -92,9 +93,12 @@
 
 .icon-dot {
     fill: $main-color;
+    padding: 0;
+}
+.icon-dot--header{
     stroke: #ffffff;
     stroke-width: rem(2);
-    padding: 0;
+    
 }
 
 .career-list__text {
@@ -180,10 +184,10 @@
 .advantage-list__text--main {
     font-family: $semi-font;
     font-size: rem(16);
-    font-weight: 700;
+    font-weight: 400;
     color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: rem(7);
+    // margin-bottom: rem(7);
 }
 
 .advantage-list__text--indentation {
@@ -196,6 +200,7 @@
     font-weight: 400;
     line-height: rem(20);
     color: $text-list;
+    padding-right: rem(30);
     margin-bottom: rem(29);
 }
 
@@ -209,6 +214,7 @@
 
 //========================================
 .main-white__background {
+    min-width: rem(320);
     background-image: url('../img/background-white.png');
     margin: 0 auto;
 }
@@ -220,7 +226,6 @@
 }
 
 .section-caption--black {
-    text-align: center;
     color: $color-caption-white_page;
     &::first-letter {
         color: #00bcd4;
@@ -230,9 +235,9 @@
         display: block;
         width: rem(150);
         margin: 0 auto;
-        padding-top: rem(7);
+        padding-top: rem(8);
         border-bottom: rem(2) solid $color-caption-white_page;
-        margin-bottom: rem(17);
+        margin-bottom: rem(18);
     }
 }
 
@@ -248,12 +253,14 @@
     font-size: rem(14);
     font-weight: 700;
     line-height: rem(17);
+    text-transform: uppercase;
     color: $color-caption-white_page;
     margin-bottom: rem(2);
 }
 
 .subtitle-text-deco--center-goit {
-    margin-bottom: rem(46);
+    text-transform: uppercase;
+    margin-bottom: rem(52);
 }
 
 .ambitious__img {
@@ -291,7 +298,7 @@
 
 .ambitious-objectives__item {
     display: flex;
-    margin-bottom: rem(31);
+    margin-bottom: rem(16);
     padding-right: rem(40);
     &:nth-child(4) {
         margin-bottom: 0;
@@ -402,9 +409,8 @@
     line-height: rem(22);
     color: $color-caption-white_page;
     text-align: center;
-    padding-top: rem(51);
-    padding-left: rem(73);
-    padding-right: rem(73);
+    text-transform: uppercase;
+    padding: rem(51) rem(60) 0;
     margin-bottom: rem(28);
     &::before {
         content: '';
@@ -430,9 +436,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: rem(19);
-    &:last-child {
-        margin-bottom: rem(53);
-    }
 }
 
 .our-pride__bg-list--first-block {
@@ -452,6 +455,7 @@
     background-image: url('../img/cup-two-opacity.png');
     background-repeat: no-repeat;
     background-position-x: rem(-7);
+    margin-bottom: rem(52);
 }
 
 .our-pride__list-header {
@@ -478,13 +482,13 @@
     line-height: rem(24);
     text-transform: uppercase;
     color: $color-caption-white_page;
-    padding-top: rem(24);
+    padding-top: rem(23);
     padding-right: 0;
 }
 
 .our-pride__list-header--caption-tender {
     padding-right: rem(82);
-    margin-bottom: rem(14);
+    margin-bottom: rem(11);
 }
 
 .our-pride__list-main--last-block {
@@ -502,13 +506,22 @@
     margin-bottom: rem(7);
 }
 
-.our-pride__list-main--text-two-block {
-    padding-top: rem(74);
-    padding-left: rem(33);
-}
-
+// .our-pride__list-main--text-two-block {
+//     padding-top: rem(74);
+//     padding-left: rem(33);
+// }
 .our-pride__list-main--last-block {
-    padding-top: rem(83);
+    padding-top: rem(33);
+}
+.our-pride__list-main--text-two-padding {
+    padding-top: rem(80);
+    padding-left: rem(21);
+}
+.our-pride__list-main--text-last-padding{
+    padding: rem(10) rem(19) 0;
+}
+.our-pride__bg-list--padding-last-block{
+    padding-top: rem(100);
 }
 
 .our-pride__list-main--text-last-block {
@@ -523,8 +536,8 @@
 }
 
 .our-pride__list-main--img-first {
+    padding-bottom: rem(20);
     margin-right: rem(16);
-    margin-bottom: rem(15);
 }
 
 .our-pride__list-main--img-two {
@@ -547,12 +560,11 @@
     position: absolute;
     top: rem(-180);
     width: 100%;
-    height: rem(2000);
+    height: rem(2070);
     background-image: url('../img/background-white.png');
 }
 
 .wrapper-teacher {
-    width: rem(320);
     margin: 0 auto;
     z-index: 1;
 }
@@ -563,9 +575,10 @@
     font-weight: 700;
     line-height: rem(18);
     text-align: center;
+    text-transform: uppercase;
     color: $color-caption-white_page;
-    padding: 0 rem(34);
-    margin-bottom: rem(41);
+    padding: 0 rem(4);
+    margin-bottom: rem(35);
 }
 
 .teacher__text {
@@ -574,8 +587,8 @@
     font-weight: 600;
     line-height: rem(24);
     color: $color-caption-white_page;
-    padding: 0 rem(15);
-    margin-bottom: rem(25);
+    padding: 0 rem(8);
+    margin-bottom: rem(20);
 }
 
 .teacher-list {
@@ -618,7 +631,7 @@
     font-size: rem(20);
     font-weight: 700;
     line-height: rem(24);
-    padding-top: rem(13);
+    padding-top: rem(15);
     padding-left: rem(19);
     &::after {
         content: '';
@@ -651,8 +664,8 @@
     font-weight: 600;
     line-height: rem(20);
     color: $color-caption-white_page;
-    padding-top: rem(23);
-    padding-right: rem(160);
+    padding-top: rem(35);
+    padding-right: rem(155);
     padding-left: rem(19);
     padding-bottom: rem(34);
 }
@@ -663,16 +676,17 @@
     align-items: center;
     background-color: #f0f0f0;
     width: 100%;
-    padding-top: rem(19);
-    margin-bottom: rem(43);
+    padding-top: rem(24);
+    margin-bottom: rem(45);
 }
 
 .teacher-list__technical-skills--caption {
     font-family: $font-caption;
     font-size: rem(14);
     font-weight: 700;
+    text-transform: uppercase;
     color: $color-caption-white_page;
-    margin-bottom: rem(27);
+    margin-bottom: rem(24);
 }
 
 .teacher-list__technical-skills--text {
@@ -683,7 +697,7 @@
     text-transform: uppercase;
     padding-right: rem(45);
     padding-left: rem(16);
-    padding-bottom: rem(22);
+    padding-bottom: rem(16);
 }
 
 .teacher-list__experience--two-block {
@@ -693,9 +707,10 @@
     line-height: rem(20);
     color: $color-caption-white_page;
     background-color: #ffffff;
-    padding-right: rem(40);
+    padding-top: rem(19);
     padding-left: rem(20);
-    padding-bottom: rem(12);
+    padding-bottom: rem(0);
+    padding-right: 0;
     &:last-child {
         padding-right: rem(45);
         padding-bottom: rem(20);
@@ -711,11 +726,12 @@
 }
 
 .teacher-list__technical-skills--text-deco-v2 {
-    padding-right: rem(24);
+    padding-right: rem(-1);
+    padding-bottom: rem(29);
 }
 
 .teacher-list__experience--deco {
-    padding-right: rem(30);
+    padding-right: rem(20);
 }
 
 .start_course {
@@ -751,9 +767,9 @@
     font-weight: 700;
     line-height: rem(20);
     text-align: center;
+    text-transform: uppercase;
     color: $color-caption-white_page;
-    padding: 0 rem(33);
-    margin-bottom: rem(50);
+    margin-bottom: rem(49);
 }
 
 .reviews-list {
@@ -778,7 +794,8 @@
     font-weight: 400;
     line-height: rem(20);
     color: $color-caption-white_page;
-    margin-bottom: rem(30);
+    padding-right: rem(5);
+    margin-bottom: rem(18);
 }
 
 .reviews-list__background {
@@ -799,19 +816,12 @@
 
 .reviews-video {
     position: relative;
+    margin-bottom: rem(54);
 }
 .reviews-video__item{
     width: rem(290);
     height: rem(224);
-}
-.video[poster]{
-    height:100%;
-    width:100%;
-    }
-
-.reviews-video__items {
-    width: rem(290);
-    margin: 0 auto;
+    margin-bottom: rem(10);
 }
 
 // .btn-video--1 {
@@ -845,16 +855,14 @@
 //     background-color: transparent;
 // }
 // ==========================================
+.main-white__background--read-detailed {
+    padding-top: rem(54);
+}
 .read-detailed {
     position: relative;
     width: rem(320);
     margin: 0 auto;
 }
-
-.main-white__background--read-detailed {
-    padding-top: rem(59);
-}
-
 .section-caption--no-black-line {
     text-align: center;
     color: $color-caption-white_page;
@@ -906,7 +914,7 @@
 }
 
 .rectangle__deco--main-position {
-    margin-bottom: rem(34);
+    margin-bottom: rem(14);
 }
 
 .read-detailed__people-position {
@@ -914,7 +922,7 @@
     font-size: rem(12);
     font-weight: 400;
     color: #5f5f5f;
-    margin-bottom: rem(4);
+    margin-bottom: rem(18);
 }
 
 .read-detailed__text {
@@ -925,7 +933,7 @@
     color: $color-caption-white_page;
     padding-left: rem(18);
     padding-right: rem(29);
-    margin-bottom: rem(40);
+    margin-bottom: rem(25);
 }
 
 .read-detailed__link {
@@ -957,8 +965,9 @@
     font-size: rem(14);
     font-weight: 700;
     line-height: rem(26);
+    text-transform: uppercase;
     color: $color-caption-white_page;
-    padding-right: rem(69);
+    padding-right: rem(49);
     margin-bottom: rem(39);
 }
 
@@ -971,7 +980,6 @@
 // Tablet
 @media (min-width: 768px) {
     .container-main-guarantee {
-        width: rem(768);
         margin: 0 auto;
     }
     .main-white__background--angle {
@@ -1005,7 +1013,7 @@
         line-height: rem(24);
         padding-left: rem(74);
         padding-right: rem(210);
-        margin-bottom: rem(53);
+        margin-bottom: rem(39);
     }
     .career__perspective {
         display: inline-block;
@@ -1017,7 +1025,7 @@
         padding-right: rem(74);
         padding-bottom: rem(10);
         padding-left: rem(10);
-        margin-left: rem(74);
+        margin-left: rem(85);
         margin-bottom: rem(7);
     }
     .line-header {
@@ -1035,8 +1043,12 @@
             padding-right: 0;
         }
     }
+    .career-list__text{
+        margin-top: rem(-23);
+    }
     .career-list__text--margin {
         padding-left: rem(13);
+        margin-top: rem(-23);
         margin-right: rem(117);
     }
     .icon-dot-header {
@@ -1046,7 +1058,7 @@
     .guarantee-list {
         position: relative;
         width: rem(572);
-        height: rem(972);
+        height: rem(874);
         margin: 0 auto;
         padding-top: 0;
         margin-bottom: rem(49);
@@ -1057,6 +1069,8 @@
         justify-content: flex-end;
     }
     .guarantee-list__logo--deco {
+        position: relative;
+        top: rem(-30);
         display: block;
         font-family: $semi-font;
         font-size: rem(150);
@@ -1079,16 +1093,19 @@
     .guarantee__deco--dream {
         display: block;
         position: absolute;
-        top: rem(25);
-        left: rem(-65);
+        top: rem(38);
+        left: rem(-76);
         font-family: $semi-font;
         font-size: rem(30);
+        letter-spacing: rem(5);
         color: #ffffff;
         transform: rotate(90deg);
     }
     .guarantee-list__text {
-        padding-left: rem(53);
+        padding-left: rem(39);
         padding-right: rem(55);
+        margin-top: rem(-11);
+        margin-bottom: rem(28);
     }
     .advantage-list {
         position: absolute;
@@ -1103,7 +1120,7 @@
         background-color: #2f2f31;
         width: rem(502);
         box-shadow: 0 rem(4) rem(17) rem(-4) rgba(0, 0, 0, 0.75);
-        padding-top: rem(43);
+        padding-top: rem(36);
         padding-left: rem(29);
         margin-bottom: rem(20);
     }
@@ -1133,7 +1150,7 @@
     }
     .center-goit__prepare-demanded {
         text-align: right;
-        padding-right: rem(8);
+        margin-right: rem(-25);
         padding-bottom: rem(3);
         border-bottom: rem(2) solid $color-caption-white_page;
         width: rem(320);
@@ -1149,16 +1166,19 @@
     }
     .ambitious__img {
         display: inline-block;
+        padding-top: rem(15);
         margin-left: rem(62);
     }
     .ambitious-purpose__caption {
         font-size: rem(16);
         line-height: rem(24);
+        margin-left: rem(22);
         margin-right: rem(270);
-        margin-bottom: rem(18);
+        margin-bottom: rem(23);
     }
     .ambitious-purpose__subtitle {
-        margin-right: rem(195);
+        margin-left: rem(23);
+        margin-right: rem(183);
     }
     .icon-dot-main {
         display: none;
@@ -1182,6 +1202,7 @@
     .ambitious-objectives__item--text {
         padding-right: 23rem;
         line-height: rem(24);
+        margin-left: rem(25);
     }
     .subtitle-text-deco--main-color-line {
         &::after {
@@ -1243,7 +1264,7 @@
         }
     }
     .graduates-work-company__text {
-        padding-top: rem(21);
+        padding-top: rem(43);
         margin-left: rem(94);
         margin-right: rem(488);
     } //============================================
@@ -1256,6 +1277,7 @@
         font-size: rem(20);
         line-height: rem(26);
         text-transform: uppercase;
+        padding-top: rem(66);
         padding-left: rem(96);
         padding-right: 0;
         margin-left: 0;
@@ -1309,12 +1331,12 @@
         padding: 0;
     }
     .our-pride__list-header--caption-tender {
-        margin-top: rem(-83);
+        margin-top: rem(-90);
         margin-left: rem(210);
         margin-right: rem(64);
     }
     .our-pride__list-header--awards {
-        margin-top: rem(-83);
+        margin-top: rem(-79);
         margin-left: rem(95);
         margin-right: rem(29);
     }
@@ -1348,7 +1370,6 @@
         padding-top: rem(60);
     }
     .our-pride__list-main--img-first {
-        height: rem(115);
         margin-top: rem(24);
         margin-right: rem(31);
     }
@@ -1362,13 +1383,13 @@
     .teacher {
         min-width: rem(768);
         width: rem(768);
-        padding-top: rem(51);
+        padding-top: rem(89);
     }
     .main-white__background--position {
         top: rem(-234);
         right: 0;
         width: rem(600);
-        height: rem(1190);
+        height: rem(1223);
     }
     .teacher__subtitle {
         line-height: rem(21);
@@ -1389,8 +1410,7 @@
         margin: 0 auto;
     }
     .teacher-list__padding {
-        margin-left: rem(40);
-        padding: 0;
+        margin-left: rem(27);
     }
     .teacher-position {
         &::before {
@@ -1399,20 +1419,29 @@
             width: rem(150);
         }
     }
+    .teacher-list__name {
+        padding-top: rem(6);
+        &:after{
+            content: '';
+            display: block;
+            padding-top: rem(11);
+        }
+    }
     .teacher-position--left {
-        margin-right: rem(50);
+        margin-right: rem(29);
     }
     .teacher-list__shadow {
         width: rem(332);
         box-shadow: none;
+        margin-bottom: rem(-14);
     }
     .teacher-list__substrate-main-first {
         &::before {
             content: '';
             display: block;
             position: absolute;
-            top: rem(68);
-            left: rem(-14);
+            top: rem(73);
+            left: rem(0);
             background-color: $main-color;
             width: rem(330);
             height: rem(353);
@@ -1421,11 +1450,12 @@
         }
     }
     .teacher-list__substrate-main-two {
+        margin-left: rem(10);
         &::before {
             content: '';
             display: block;
             position: absolute;
-            top: rem(31);
+            top: rem(40);
             right: rem(-13);
             background-color: $main-color;
             width: rem(310);
@@ -1439,8 +1469,8 @@
             content: '';
             display: block;
             position: absolute;
-            top: rem(546);
-            left: rem(-14);
+            top: rem(561);
+            left: rem(0);
             background-color: $main-color;
             width: rem(330);
             height: rem(334);
@@ -1459,6 +1489,7 @@
         padding-right: rem(105);
     }
     .teacher-list__name--two-rights {
+        padding-top: rem(19);
         padding-right: rem(77);
     }
     .teacher-list__position--two-rights {
@@ -1466,28 +1497,48 @@
     }
     .teacher-list__name--last-rights {
         padding-right: rem(100);
+        padding-top: rem(4);
     }
     .teacher-list__position--last-rights {
-        padding-right: rem(80);
+        padding-right: rem(75);
     }
     .teacher-list__experience--deco--first-block {
-        padding-right: rem(200);
+        padding-right: rem(190);
+        padding-top: rem(29);
     }
     .teacher-list__experience--deco--last-block {
-        padding-right: rem(70);
+        padding-top: rem(28);
+        padding-right: rem(66);
+    }
+    .teacher-list__experience--two-block {
+        &:last-child{
+            padding-right: rem(32);
+        }
     }
     .teacher-position--two-block {
         position: absolute;
         top: rem(168);
         left: rem(360);
     }
+    .teacher-position--indentation {
+        margin-bottom: rem(30);
+    }
     .teacher__text {
         position: absolute;
-        top: rem(250);
+        top: rem(287);
         left: rem(390);
+        margin-right: rem(16);
     }
     .teacher-list__technical-skills {
-        margin-bottom: rem(67);
+        margin-bottom: rem(74);
+    }
+    .teacher-list__technical-skills--text-deco {
+        padding-top: rem(20);
+        padding-right: rem(99);
+    }
+    .teacher-list__technical-skills--caption-two-block{
+        padding-top: rem(20);
+        margin-bottom: rem(3);
     }
     .start_course--teacher {
         position: absolute;
@@ -1498,9 +1549,9 @@
         position: relative;
         width: rem(768);
         margin: 0 auto;
+        padding-top: rem(22);
     }
     .section-caption--reviews {
-        text-align: left;
         padding: 0;
         margin-left: rem(41);
         margin-right: rem(495);
@@ -1536,7 +1587,7 @@
             display: block;
             border-bottom: rem(2) solid $color-caption-white_page;
             width: rem(280);
-            margin: 0 auto;
+            margin-left: rem(25);
             margin-bottom: rem(13);
         }
     }
@@ -1556,11 +1607,15 @@
         margin-right: rem(26);
     }
     .reviews-list-plus__text--tablet-item-7 {
-        margin-bottom: rem(35);
+        margin-bottom: rem(43);
+    }
+    .reviews-list__background--text {
+        padding-left: rem(8);
     }
     .reviews-list__background {
         margin-left: rem(48);
         padding-bottom: rem(70);
+        background-position-x: rem(190);
         background-position-y: rem(80);
         margin-bottom: 0;
         &:after {
@@ -1575,11 +1630,19 @@
     }
     .reviews-video {
         position: absolute;
-        top: rem(-192);
+        top: rem(-150);
+        left: rem(28);
         background-image: url('../img/backgroung-reviews-video.png');
         width: rem(316);
         height: rem(916);
-    } //=============================
+        padding-top: rem(121);
+    } 
+    .reviews-video__item{
+        width: rem(318);
+        height: rem(224);
+        margin-bottom: rem(28);
+    }
+    //=============================
     .read-detailed {
         position: relative;
         width: rem(768);
@@ -1587,8 +1650,8 @@
             content: '';
             display: block;
             position: absolute;
-            top: rem(128);
-            left: rem(399);
+            top: rem(122);
+            left: rem(397);
             background-color: $main-color;
             width: rem(300);
             height: rem(100);
@@ -1606,9 +1669,10 @@
     }
     .main-white__background--read-detailed {
         background-image: url('../img/detail-backgrond-angle.png');
-        background-position-y: rem(-277);
-        width: 100%;
-        height: rem(1458);
+        background-repeat: no-repeat;
+        background-position-y: rem(-260);
+        min-width: rem(768);
+        height: rem(1503);
         margin: 0 auto;
         padding-top: rem(138);
     }
@@ -1630,7 +1694,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: rem(24);
+        padding-top: rem(12);
         padding-left: rem(18);
     }
     .rectangle__deco {
@@ -1647,7 +1711,7 @@
     }
     .read-detailed__link--deco {
         padding: 0;
-        margin-top: rem(-15);
+        margin-top: rem(-7);
         margin-right: rem(24);
     }
     .wrap-detailed-element {
@@ -1659,7 +1723,7 @@
         font-size: rem(16);
         text-transform: uppercase;
         padding-right: 0;
-        margin-bottom: rem(49);
+        margin-bottom: rem(43);
         &::before {
             content: '';
             display: block;
@@ -1693,22 +1757,24 @@
             text-decoration: none;
         }
     }
+    .wrap-read-detailed__list:nth-of-type(5){
+        margin-bottom: rem(39);
+    }
     .start_course--detailed {
         margin-bottom: 0;
     }
 }
 
 // Desktop
-@media (min-width: 1200px) {
-    // .container-main-guarantee {
-    //     width: rem(1146);
-    //     margin: 0 auto;
-    // }
+@media (min-width: 1146px) {
+    .container-main-guarantee {
+        min-width: rem(1146); 
+    }
     // .bg-black {
-    //     width: 100%;
+    //     min-width: rem(1920);
     // }
     // .container-content-guarantee {
-    //     width: 100%;
+    //     min-width: rem(1146);
     //     margin: 0 auto;
     // }
     .guarantee {
@@ -1827,7 +1893,6 @@
     } //=========================================
     .main-white__background--angle {
        position: relative;
-    //    width: rem(1146);
        height: rem(852);
        background-image: url('../img/background-decktop-angle.png');
        z-index: 1;
@@ -1852,7 +1917,7 @@
        }
     }
     .center-goit {
-        // width: rem(1146);
+        width: rem(1146);
         padding-top: rem(166);
         margin-top: rem(-50);
     }
@@ -1919,7 +1984,7 @@
     .our-pride {
         display: flex;
         flex-direction: column;
-        // width: rem(1146);
+        width: rem(1146);
         padding-top: 0;
         margin-bottom: rem(134);
     }
@@ -1935,9 +2000,9 @@
             border-top: rem(4) solid $color-caption-white_page;
         }
     }
-    // .our-pride__wrap {
-    //     width: rem(1146);
-    // }
+    .our-pride__wrap {
+        width: rem(1146);
+    }
     .our-pride__bg-list--first-block {
         width: rem(562);
     }
@@ -1950,7 +2015,7 @@
         }
     } //==============================
     .teacher {
-        // width: rem(1146);
+        width: rem(1146);
         padding-top: 0;
     }
     .main-white__background--position {
@@ -1987,9 +2052,9 @@
             z-index: -1;
         }
     }
-    // .teacher-list {
-    //     width: rem(1146);
-    // }
+    .teacher-list {
+        width: rem(1146);
+    }
     .teacher-list__shadow {
         width: rem(430);
     }
@@ -2013,7 +2078,7 @@
     .teacher-list__experience {
         font-size: rem(16);
         line-height: rem(26);
-        padding-top: rem(44);
+        padding-top: rem(42);
         padding-left: rem(33);
     }
     .teacher-list__experience--deco--first-block {
@@ -2093,7 +2158,7 @@
         font-size: rem(14);
         padding-right: rem(117);
         padding-left: rem(33);
-        padding-bottom: rem(27);
+        padding-bottom: rem(18);
     }
     .teacher-list__technical-skills--text-deco {
         padding-right: rem(189);
@@ -2102,17 +2167,17 @@
         top: rem(-197);
         left: rem(550);
     } //================================
-    // .reviews {
-    //     width: rem(1146);
-    // }
+    .reviews {
+        width: rem(1146);
+    }
     .section-caption--reviews {
         line-height: rem(50);
         margin-left: 0;
         margin-right: rem(800);
     }
-    // .reviews-list {
-    //     width: rem(1146);
-    // }
+    .reviews-list {
+        width: rem(1146);
+    }
     .reviews__subtitle {
         margin-right: rem(97);
         font-size: rem(18);
@@ -2237,7 +2302,7 @@
         margin-bottom: rem(110);
     }
     .wrap-read-detailed__list {
-        // width: rem(1146);
+        width: rem(1146);
         z-index: 1;
     }
     .rectangle-postion {
@@ -2261,7 +2326,7 @@
         margin-right: rem(40);
     }
     .wrap-detailed-element {
-        // width: rem(1146);
+        width: rem(1146);
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -2299,6 +2364,9 @@
     }
     .wrap-read-detailed__list:nth-of-type(5) {
         margin-bottom: rem(100);
+    }
+    .section-caption--no-black-line{
+        margin-bottom: rem(67);
     }
     .start_course--detailed {
         z-index: 1;

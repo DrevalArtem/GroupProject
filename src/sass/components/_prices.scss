@@ -1264,6 +1264,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         background-image: url('../img/code_3-min.png');
         background-repeat: no-repeat;
         height: rem(915);
+        box-shadow: 300px 5px 220px 16px rgba(227,227,227,0.6);
     }
     .graduate-skills {
         position: relative;

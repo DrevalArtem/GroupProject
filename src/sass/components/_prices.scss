@@ -611,7 +611,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
 }
 
 // Tablet
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1145px) {
 
 
     // -------------variables-------------
@@ -965,7 +965,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
 }
   
     // Desktop
-    @media (min-width: 1200px) {
+    @media (min-width: 1146px) {
     
     // -------------variables-------------
     
@@ -981,6 +981,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
     }
     .container-main--bgd {
         background-repeat: repeat;
+        margin-top: rem(-200);
     } 
 
     // --------section prices------------
@@ -1192,7 +1193,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             content: "";
             position: absolute;
             display: block;
-            left: rem(-230);
+            left: rem(-240);
             top: rem(-180);
             width: rem(227);
             height: rem(960);
@@ -1203,7 +1204,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
             content: "";
             position: absolute;
             display: block;
-            right: rem(-65);
+            right: rem(-80);
             top: rem(-240);
             width: rem(65);
             height: rem(570);
@@ -1280,7 +1281,7 @@ input[type="checkbox"]:checked ~ .faq-box-list__text {
         background-repeat: no-repeat;
         width: rem(1920);
         height: rem(1460);
-        right: rem(-373);
+        right: rem(-375);
         top: rem(-470);
         z-index: -2;
     }

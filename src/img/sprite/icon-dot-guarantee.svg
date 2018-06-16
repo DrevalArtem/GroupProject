@@ -1,8 +1,33 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="icon-dot-guarantee" id="shadow" viewBox="0 0 32 32">
+<symbol id="icon-dot-guarantee" viewBox="0 0 32 32">
 <title>icon-dot-guarantee</title>
-<path id="shadow" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path stroke="rgb(255, 255, 255)" stroke-width="2px" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
 </defs>
 </svg>
+
+<!-- <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="43px" height="43px">
+<defs>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="-1px" y="-1px" width="44px" height="44px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="7" />
+    <feGaussianBlur result="blurOut" stdDeviation="3.162" />
+    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.35"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+</defs>
+<g id="icon-dot-guarantee" filter="url(#Filter_0)">
+<path id="icon-dot-guarantee" fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(0, 188, 212)"
+ d="M20.500,3.000 C26.299,3.000 31.000,7.701 31.000,13.499 C31.000,19.297 26.299,23.998 20.500,23.998 C14.701,23.998 10.000,19.297 10.000,13.499 C10.000,7.701 14.701,3.000 20.500,3.000 Z"/>
+</g>
+</svg> -->
+

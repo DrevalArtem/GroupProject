@@ -1,7 +1,5 @@
 .idea
 .git
 node_modules
-.DS_Store
-build
 package-lock.json
 src/libs/.DS_Store

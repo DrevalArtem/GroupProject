@@ -111,7 +111,9 @@
     padding-top: rem(29);
     padding-left: rem(10);
     height: auto;
-    margin-bottom: rem(55);
+    margin-bottom: rem(54);
+    box-shadow: 0 rem(4) rem(17) rem(-4) rgba(0, 0, 0, 0.75);
+
 }
 
 .guarantee__deco--dream {
@@ -164,7 +166,7 @@
 }
 
 .advantage-list__text {
-    padding-top: rem(19);
+    padding-top: rem(18);
     margin-bottom: rem(30);
 }
 
@@ -175,7 +177,7 @@
     line-height: rem(17);
     color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: rem(5);
+    margin-bottom: rem(6);
 }
 
 .advantage-list__text--under-the-text {
@@ -230,7 +232,7 @@
         display: block;
         width: rem(150);
         margin: 0 auto;
-        padding-top: rem(8);
+        padding-top: rem(10);
         border-bottom: rem(2) solid $color-caption-white_page;
         margin-bottom: rem(21);
     }
@@ -426,13 +428,6 @@
         margin: 0 auto;
     }
 }
-.our-pride__list-header--awards{
-    letter-spacing: 0.9px;
-    padding-top: rem(27);
-}
-.our-pride__list-header--education{
-    letter-spacing: 0.8px;
-}
 
 .our-pride__wrap {
     width: rem(320);
@@ -478,7 +473,7 @@
     padding-top: rem(19);
 }
 .our-pride__list-header-three{
-    padding-top: rem(28);
+    padding-top: rem(26);
 }
 
 .our-pride__list-header--banner {
@@ -504,6 +499,16 @@
     color: $color-caption-white_page;
     padding-top: rem(23);
     padding-right: 0;
+}
+
+.our-pride__list-header--awards{
+    letter-spacing: 0.9px;
+    padding-top: rem(25);
+}
+
+.our-pride__list-header--education{
+    letter-spacing: 0.8px;
+    padding-top: rem(21);
 }
 
 .our-pride__list-header--caption-tender {
@@ -598,6 +603,14 @@
     margin: 0 auto;
     z-index: 1;
 }
+.section-caption--teacher{
+    &::after{
+        content: '';
+        display: block;
+        padding-top: rem(7);
+        margin-bottom: rem(16);
+    }
+}
 
 .teacher__subtitle {
     font-family: $font-caption;
@@ -608,7 +621,7 @@
     text-transform: uppercase;
     color: $color-caption-white_page;
     padding: 0 rem(4);
-    margin-bottom: rem(35);
+    margin-bottom: rem(43);
 }
 
 .teacher__text {
@@ -616,9 +629,10 @@
     font-size: rem(14);
     font-weight: 600;
     line-height: rem(24);
+    letter-spacing: -0.3px;
     color: $color-caption-white_page;
-    padding: 0 rem(8);
-    margin-bottom: rem(20);
+    padding: 0 rem(14);
+    margin-bottom: rem(25);
 }
 
 .teacher-list {
@@ -633,13 +647,14 @@
     font-size: rem(24);
     font-weight: 700;
     color: $color-caption-white_page;
-    margin-bottom: rem(20);
+    margin-right: rem(7);
+    margin-bottom: rem(14);
     &::before {
         content: '';
         display: inline-block;
         border-bottom: rem(2) solid #29292b;
         width: rem(100);
-        margin-right: rem(9);
+        margin-right: rem(6);
     }
 }
 
@@ -661,6 +676,7 @@
     font-size: rem(20);
     font-weight: 700;
     line-height: rem(24);
+    letter-spacing: 0.7px;
     padding-top: rem(15);
     padding-left: rem(19);
     &::after {
@@ -672,6 +688,14 @@
         margin-bottom: rem(8);
     }
 }
+// .teacher-list__name--two-rights{
+//     padding-top: rem(18);
+//     &::after{
+//         content: '';
+//         display: block;
+
+//     }
+// }
 
 .teacher-list__position {
     display: block;
@@ -710,7 +734,7 @@
     background-color: #f0f0f0;
     width: 100%;
     padding-top: rem(24);
-    margin-bottom: rem(45);
+    margin-bottom: rem(52);
 }
 
 .teacher-list__technical-skills--caption {
